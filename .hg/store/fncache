@@ -1,9 +1,11 @@
 data/FirstTestBuild_Data/Managed/Mono.Security.dll.i
 data/TestBuild1.1_Data/Mono/etc/mono/2.0/web.config.i
+data/##TestBuilds##/FirstTestBuild_Data/Mono/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx.i
 data/Library/metadata/2a/2a49aa5b76842305fc65897abcdcf30f.i
 data/Assets/Scripts/CharacterClasses/BaseCharacter.cs.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_25.png.meta.i
-data/Library/metadata/55/55c3f306078dd4d44b8b620cdf19c818.i
+data/Library/metadata/00/00000000000000004100000000000000.i
+data/ProjectSettings/NetworkManager.asset.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/smoke3.tif.i
 data/Library/metadata/3c/3c60b734ac2401942a8c0049b95bacad.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_66.png.i
@@ -11,6 +13,7 @@ data/FirstTestBuild_Data/Mono/etc/mono/2.0/web.config.i
 data/Assets/Scripts/CharacterClasses/BaseCharacter.cs.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Smoke3.mat.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Snowflake.mat.i
+data/Library/metadata/ac/acd22cefe09441d2c7e801193b935495.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_54.png.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/flameB.tif.i
 data/Assets/Materials/Floor.mat.meta.i
@@ -22,9 +25,9 @@ data/Library/metadata/9d/9d4133d5d30b644bd87802a347eaccbe.i
 data/Library/metadata/35/356176e7a9c2a8b44b54980987289047.i
 data/Assets/ZStandard Assets/Particles/Dust.meta.i
 data/Assets/ZStandard Assets/Physic Materials/Rubber.physicmaterial.meta.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_36.png.meta.i
+data/Library/metadata/4c/4ce555b5b742e2f4b98f4e159b28ec98.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Smoke1.mat.i
-data/Assets/ZStandard Assets/Particles/Sources/Materials.meta.i
+data/Library/metadata/d4/d42aa436e597ca946bf4977fb61b26ac.i
 data/Assembly-CSharp-firstpass.csproj.i
 data/Assets/ZStandard Assets/Particles/Legacy Particles.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/FlameD.mat.meta.i
@@ -33,22 +36,25 @@ data/Assets/Animations/TwilightWalkNorth.anim.i
 data/Assets/ZStandard Assets/Particles/Smoke/Smoke Trail.prefab.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_47.png.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_5.png.meta.i
-data/Assets/Animations/TwilightIdleSouthWest.anim.meta.i
+data/##TestBuilds##/TestBuild1.1_Data/Mono/mono.dll.i
+data/Assets/ZStandard Assets/Particles/Sources/Textures/Star02.png.meta.i
 data/Assets/ZStandard Assets/Terrain Assets/Terrain Grass/Grass.psd.meta.i
 data/Library/metadata/08/086544326e5604e81a96f61fb0f0a78e.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/smokepuff1.psd.meta.i
 data/Library/metadata/f2/f2af333648c334319bd43c214449ab50.i
 data/Library/metadata/26/26544a38b1b66b143b2f3bed70a7ae2d.i
-data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/GoodDirt.psd.meta.i
+data/TestBuild1.1_Data/Managed/mscorlib.dll.i
+data/TestBuild1.1_Data/Mono/etc/mono/1.0/DefaultWsdlHelpGenerator.aspx.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/flameC.tif.i
-data/Assembly-CSharp-firstpass-vs.csproj.i
+data/FirstTestBuild_Data/output_log.txt.i
 data/Library/metadata/8b/8b3964d9c6372484ab3d8cf657fe6b80.i
 data/Library/metadata/7b/7bedf3b67e430c54e91afedc999c9b89.i
-data/Assets/Sprites/NPC/Lyra.png.meta.i
+data/Assets/ZStandard Assets/Particles/Sources/Textures/flameE.tif.i
 data/Assets/Scripts/Enemy2D.cs.i
 data/Assets/Scripts/Door.cs.i
 data/Library/metadata/46/463e0eb6c1f0fdb4c9e8b015a46dc5ce.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/flameA.tif.i
+data/##TestBuilds##/TestBuild1.1_Data/level1.i
 data/Library/metadata/7d/7dca5dff796eb47908302d505dcb19b0.i
 data/Assets/Scripts.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_32.png.i
@@ -56,30 +62,33 @@ data/Assets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter/Ma
 data/TestBuild1.1_Data/Managed/Assembly-UnityScript.dll.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/flameE.tif.d
 data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/Cliff (Layered Rock).psd.meta.i
+data/##TestBuilds##/TestBuild1.0.zip.d
 data/FirstTestBuild_Data/Managed/mscorlib.dll.d
 data/Library/metadata/fa/fae0e2481a77ce6418e0d09117bbbc5d.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_43.png.i
 data/Library/metadata/48/48781227c05653f49ba65132eec2f34b.i
-data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/ThirdPersonController.js.meta.i
+data/Assets/ZStandard Assets/Particles/Sources/Materials/FlameA.mat.i
 data/FirstTestBuild_Data/Managed/mscorlib.dll.i
 data/Assets/ZStandard Assets/Particles/Sources.meta.i
-data/Library/metadata/46/46e871058d317418fab60bb84a290869.i
-data/TestBuild1.1_Data/Resources/unity_builtin_extra.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_15.png.i
+data/Library/metadata/ae/aeb9955a45b871645b0fd7664b357c77.i
 data/Assembly-UnityScript-firstpass.unityproj.i
 data/Library/metadata/4e/4efe5620a91cf9542993ee04a027a7f5.i
 data/Library/metadata/67/67f74c4fe34b50a418978756003f6631.i
 data/Assets/ZStandard Assets/Particles/Sources/Animations/Stop Emitting 2 sec.anim.meta.i
 data/TestBuild1.1_Data/Resources/unity default resources.i
+data/##TestBuilds##/TestBuild1.1_Data/Resources/unity default resources.i
 data/TestBuild1.1_Data/Managed/Mono.Security.dll.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_34.png.i
-data/Assets/ZStandard Assets/Particles/Sources/Textures/flameE.tif.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_23.png.meta.i
 data/TestBuild1.1_Data/Resources/unity default resources.d
+data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/Cliff (Layered Rock).psd.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/smoke3.tif.d
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_36.png.i
 data/Library/metadata/67/67db31eead11e8d6d00011d98d76c639.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_57.png.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_42.png.meta.i
-data/Assets/ZStandard Assets/Particles/Sources/Textures/smokepuff1.psd.i
+data/Library/metadata/00/0000000000000000a000000000000000.i
 data/Assets/Scenes/Scene1.unity.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Water Splash1.mat.i
 data/Library/metadata/5b/5bf9fd78ccff71244ac28aa4583925f1.i
@@ -92,23 +101,32 @@ data/Library/metadata/96/96abde5c57ccc4f47ab5fc5e5e9a8e12.i
 data/Library/metadata/99/99e86ee0ad11f8d6d00011d98d76c639.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Sparkles2.mat.i
 data/Library/metadata/00/00000000000000006100000000000000.i
-data/Assets/Prefabs/Background.prefab.i
+data/Library/metadata/c9/c994fde8e6848a3771503f184e0c9cb4.i
 data/Assembly-UnityScript-firstpass-vs.unityproj.i
 data/Library/metadata/41/41232a5dd4f74d94c8f9672cb0f179fe.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/ColorFlare.png.i
 data/Library/metadata/5a/5a09dad89d11389ed000e82b8d76c639.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/smoketest2.psd.d
+data/##TestBuilds##/TestBuild1.1_Data/Managed/System.Core.dll.i
+data/##TestBuilds##/TestBuild1.1.exe.i
+data/##TestBuilds##/FirstTestBuild_Data/output_log.txt.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/soapbubble.tif.meta.i
 data/Library/metadata/2c/2ca1c44ba2c7fc24ba47000b0d87bdd0.i
+data/Library/metadata/fa/fa9a139ead11e8d6d00011d98d76c639.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_39.png.meta.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_53.png.i
 data/Library/metadata/e8/e8ee7c841ac3e7947b7fb4d1ae1b9340.i
 data/Library/metadata/30/30040550f5e9bbd4cb128e9eb3004289.i
 data/Library/metadata/4b/4b31b1caadab1ee4b8606c9f35713992.i
+data/##TestBuilds##/TestBuild1.1_Data/output_log.txt.i
 data/Library/metadata/57/577082fbd5d289f4b82975ab139954dc.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_64.png.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_41.png.meta.i
 data/Assets/Materials/Player.mat.i
+data/##TestBuilds##/TestBuild1.0.zip.i
 data/Library/metadata/e8/e8519a8bb1e20274f95a71a1ceec2100.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_65.png.i
+data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/Materials.meta.i
 data/Assets/ZStandard Assets/Particles/Legacy Particles/Sparks.prefab.i
 data/Library/metadata/c6/c63a45397ab33b64d9317b9cfadcb7ce.i
 data/Assets/Scripts/CharacterClasses/Skill.cs.i
@@ -117,96 +135,107 @@ data/Assets/Animations/TwilightIdleNorthEast.anim.i
 data/Library/metadata/57/5710a1f47af2947699139509aae39149.i
 data/Assets/ZStandard Assets/Particles/Water/Water Fountain.prefab.i
 data/Library/metadata/54/542f86e4e34b523499e0f073b1355e1a.i
-data/FirstTestBuild_Data/Mono/etc/mono/2.0/settings.map.i
+data/Library/metadata/60/6068f80921f6a124fb9cd1bc8463baac.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter/Textures/constructor_diffuse.png.d
 data/Assets/Scripts/Menu.cs.meta.i
 data/TestBuild1.0.zip.d
-data/ProjectSettings/Physics2DSettings.asset.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_29.png.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/smoke.tif.i
 data/TestBuild1.0.zip.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/flameC.tif.meta.i
+data/Library/metadata/30/309fa058db111724683629628ffafca3.i
 data/Assets/Sprites/NPC/Lyra_text_heads_spr_6.5.png.i
 data/Library/metadata/71/7137f89696f392544931bf91711231e1.i
 data/TestBuild1.1_Data/Managed/UnityEngine.dll.i
 data/Assets/ZStandard Assets/Physic Materials/Ice.physicmaterial.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_52.png.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Shaders/Particle Alpha Blend (Queue +100).shader.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_78.png.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_13.png.meta.i
+data/Library/metadata/48/481dbeef69b807949a628012b16f7602.i
 data/Library/metadata/da/dad35d01f49d83c499c9cd9695358c98.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_21.png.i
+data/Assets/Textures/RedHealth.png.i
 data/Assets/Animations/TwilightWalkSouthWest.anim.meta.i
 data/Library/metadata/0d/0d3165936a5686b4bb655db2d709ca02.i
 data/Library/metadata/74/74f4a47fc3b034e2d963491f4e514174.i
 data/Assets/ZStandard Assets/Physic Materials/Bouncy.physicmaterial.i
-data/Library/metadata/2b/2b21364bb71d4eb4dbce6894c82cd119.i
+data/Library/metadata/ca/ca49380a71a2bb64c830d06bd421b9d1.i
+data/##TestBuilds##/TestBuild1.1_Data/Managed/System.dll.i
 data/Assets/ZStandard Assets/Particles/Fire/Fire1.prefab.meta.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/ThirdPersonController.js.i
+data/##TestBuilds##/TestBuild1.1_Data/Mono/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx.i
+data/##TestBuilds##/FirstTestBuild_Data/Mono/etc/mono/config.i
 data/Library/metadata/9c/9c7f793f82a4f7bda3662a9a2f23142e.i
-data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/MouseLook.cs.i
+data/Assets/Scenes/Scene2.unity.meta.i
 data/Assets/Scripts/CharacterClasses/ModifiedStat.cs.meta.i
 data/Library/metadata/20/202f4c071cbc45c4baa0cecaf13c8da4.i
 data/Library/metadata/df/df42ef794d3e0441783057cf822a525c.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_48.png.meta.i
 data/Library/metadata/cf/cf9165c9b78991b4ba9d8d99ea6c8b30.i
 data/Assets/ZStandard Assets/Particles/Sources/Shaders/Particle Alpha Blend (Queue +100).shader.meta.i
-data/Library/metadata/60/6068f80921f6a124fb9cd1bc8463baac.i
+data/Assets/ZStandard Assets/Scripts/General Scripts/ActivateTrigger.cs.meta.i
+data/##TestBuilds##/TestBuild1.1_Data/Mono/etc/mono/config.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_31.png.meta.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_20.png.meta.i
+data/Library/metadata/e4/e4e4cff51dff43545953848c2258e62c.i
 data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/Grass&Rock.psd.d
 data/Library/metadata/08/086544326e5604e81a96f61fb0f0a78e.d
 data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/Grass&Rock.psd.i
 data/Library/metadata/69/69e625918dd2fdb4b893ce2e3d435f1a.i
-data/Assets/ZStandard Assets/Character Controllers.meta.i
+data/##TestBuilds##/FirstTestBuild_Data/sharedassets1.assets.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_51.png.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_12.png.meta.i
-data/Assets/DialogueText/LyraDialogue.txt.meta.i
 data/FirstTestBuild_Data/level0.i
-data/Assets/ZStandard Assets/Particles/Misc/Sparks.prefab.i
+data/Library/metadata/86/8600316ae23e146108aa156f81a2d56f.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_5.png.i
 data/Library/metadata/6d/6d83547374023b84188af19db89f8137.i
 data/FirstTestBuild_Data/mainData.i
-data/Assets/ZStandard Assets/Physic Materials/Metal.physicmaterial.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_1.png.i
+data/##TestBuilds##/TestBuild1.1_Data/Mono/etc/mono/2.0/web.config.i
+data/##TestBuilds##/TestBuild1.1_Data/Resources/unity default resources.d
 data/TestBuild1.1_Data/level1.i
 data/Assets/ZStandard Assets/Scripts/General Scripts/ActivateTrigger.cs.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/FlameC.mat.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Fire Add.mat.meta.i
+data/TestBuild1.1.exe.i
 data/Assets/ZStandard Assets/Terrain Assets/Terrain Grass.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Animations/Stop Emitting 1 sec.anim.meta.i
 data/Library/metadata/29/292f9aa07e6e93d408423f1ce7c9db38.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/fairydust.tif.i
+data/##TestBuilds##/TestBuild1.1_Data/sharedassets2.assets.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_26.png.meta.i
 data/Assets/ZStandard Assets/Particles/Misc/Sparks.prefab.meta.i
 data/Assets/ZStandard Assets/Particles/Smoke/Fluffy Smoke.prefab.i
 data/Library/metadata/da/da93ddd6928094e24bb1f3f665f143d3.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_19.png.meta.i
-data/Assets/Materials.meta.i
-data/Library/metadata/44/44b3febaf5142a5429938ef0a0de2395.i
+data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/PlatformInputController.js.meta.i
+data/ProjectSettings/DynamicsManager.asset.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_28.png.meta.i
 data/Library/metadata/cf/cf70eee472fd84e4eb58c7c7542e92ae.i
 data/Library/InspectorExpandedItems.asset.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_77.png.meta.i
 data/FirstTestBuild_Data/Resources/unity default resources.i
-data/Library/metadata/e9/e9b2eead3d2f84ce19c1d65f1dbf66f9.i
+data/##TestBuilds##/TestBuild1.1_Data/Mono/etc/mono/2.0/machine.config.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_41.png.i
 data/Assets/ZStandard Assets.meta.i
 data/Assets/Scenes/Scene1.unity.meta.i
-data/FirstTestBuild_Data/Resources/unity default resources.d
-data/Assets/Animations/TwilightWalkNorthEast.anim.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_59.png.meta.i
+data/Library/ScriptMapper.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_22.png.meta.i
 data/Library/metadata/cb/cba4562cece794697b418ce8e7c04b3c.i
 data/Library/metadata/79/79ee47d0d7d8347459a63ae804788244.i
-data/Library/metadata/ae/aeb9955a45b871645b0fd7664b357c77.i
+data/##TestBuilds##/FirstTestBuild_Data/Resources/unity_builtin_extra.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_76.png.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Smoke.mat.i
-data/Library/metadata/b4/b4c038818e5cdbd429b09de67ba25d9d.i
-data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm.meta.i
+data/Library/metadata/a6/a6492410a11989d4ebbc4ca0159c531b.i
+data/Library/metadata/91/91b42d4fd0e777d46b5d09fef69d9b47.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_40.png.meta.i
-data/FirstTestBuild_Data/Managed/UnityEngine.dll.d
+data/Library/metadata/29/29f2844e1d89a4ed09e527cd2039d6ea.i
+data/Library/metadata/16/167a5dfc7db6f00498fae53ce4a6adf4.i
+data/Library/metadata/56/56a1ad6de1dd8f24881bf031d6c8bed2.i
+data/##TestBuilds##/TestBuild1.1_Data/sharedassets0.assets.i
+data/##TestBuilds##/TestBuild1.1_Data/sharedassets0.assets.d
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_43.png.meta.i
 data/Library/metadata/00/00000000000000002000000000000000.i
 data/Assets/Sprites/NPC.meta.i
 data/Assembly-CSharp-vs.csproj.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_39.png.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Poof1.mat.meta.i
 data/Assets/Animations/TwilightIdleSouth.anim.meta.i
 data/Assets/ZStandard Assets/Particles/Misc/Soap Bubbles.prefab.meta.i
@@ -215,32 +244,30 @@ data/Assets/ZStandard Assets/Particles/Sources/Materials/FlameE.mat.meta.i
 data/Library/metadata/c4/c48f755640f4048aeaa765302f0c14b3.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Smoke2.mat.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/flameA.tif.meta.i
-data/Library/metadata/fe/fefb1f960cc34ab4581ef47b772db48e.i
+data/##TestBuilds##/TestBuild1.1_Data/PlayerConnectionConfigFile.i
 data/Library/metadata/8a/8af894fd0cfac794ca4ccd21b9a43833.i
-data/Library/metadata/60/60bca8f58a0b8478e946e6e86658cb29.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_1.png.i
 data/Assets/Animations/Player.controller.meta.i
 data/Assets/ZStandard Assets/Scripts/Camera Scripts/MouseOrbit.js.i
-data/Library/metadata/85/85cde262bee344ae28a0bf86762219ac.i
+data/TestBuild1.1_Data/Mono/etc/mono/mconfig/config.xml.i
 data/Library/metadata/14/144b203f383094d16b1f336c74c47326.i
 data/Assets/Animations/TwilightIdleNorthWest.anim.i
 data/TestBuild1.1_Data/Mono/etc/mono/config.i
 data/Library/metadata/9c/9c5bd6070cd5d481abdb8755ff51fd7a.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_69.png.meta.i
-data/Assets/ZStandard Assets/Particles/Sources/Materials/Fairy Dust.mat.i
 data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/PalmBranch.psd.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Sparkles1.mat.meta.i
-data/Assets/ZStandard Assets/Particles/Smoke/Smoke Trail.prefab.meta.i
-data/Assets/ZStandard Assets/Character Controllers/3rd Person Controller.prefab.meta.i
+data/Assets/Textures/RedHealth.png.meta.i
 data/TestBuild1.1_Data/DialogueText/LyraDialogue.txt.i
 data/Assets/Sprites/TwilightOverworld.meta.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_30.png.meta.i
+data/##TestBuilds##/FirstTestBuild_Data/Mono/etc/mono/2.0/web.config.i
 data/Assets/ZStandard Assets/Particles/Legacy Particles/Small explosion.prefab.i
+data/##TestBuilds##/TestBuild1.1_Data/Mono/mono.dll.d
 data/Assets/Animations/TwilightIdleWest.anim.meta.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_29.png.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_49.png.i
+data/Assets/ZStandard Assets/Particles/Sources/Materials/Smoke2.mat.meta.i
 data/Library/metadata/01/01b622d4830754f4886f4b03606fb1ec.i
 data/Assets/Scripts/CharacterClasses/ModifiedStat.cs.i
-data/Library/metadata/02/028c11450244e4feabe6828fc2ec3e03.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_37.png.i
 data/ProjectSettings/EditorBuildSettings.asset.i
 data/Library/metadata/30/3033e3e83f8710a439c8c55ba147d7f3.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/FlameB.mat.i
@@ -249,93 +276,100 @@ data/Assets/ZStandard Assets/Particles/Sources/Materials/Snowflake.mat.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/DustPoof.psd.meta.i
 data/Assets/Animations/TwilightWalkEast.anim.meta.i
 data/Assets/ZStandard Assets/Particles/Water.meta.i
-data/Assets/Prefabs/Background.prefab.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_74.png.i
 data/TestBuild1.1_Data/Mono/etc/mono/2.0/machine.config.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_64.png.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_67.png.i
+data/Assets/ZStandard Assets/Terrain Assets/Terrain Grass/Grass.psd.d
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_14.png.meta.i
 data/Library/metadata/87/87abfe6262fc7234e873a760c69ce91c.i
 data/Assets/Scripts/Enemy2D.cs.meta.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_4.png.meta.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_69.png.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Poof1.mat.i
 data/Library/metadata/fa/fa150ad767555874f9cef6834bbb027e.i
 data/Library/metadata/0d/0d5064caea0e9094e8d4bcf8c206573f.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_41.png.i
+data/Library/metadata/e9/e9b2eead3d2f84ce19c1d65f1dbf66f9.i
 data/Assets/Scripts/Controller2D.cs.i
 data/Library/metadata/93/93e9bb83c04587a459e7d7252155fffc.i
 data/Assets/ZStandard Assets/Particles/Misc/Soap Bubbles.prefab.i
 data/Assets/Animations/TwilightWalkSouthWest.anim.i
 data/Library/metadata/61/618a36a0a1e7d6d4f9b68820b44fdfc4.i
 data/Library/metadata/97/97b050d43ac7c4d2b9f6cbb587650761.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_63.png.i
+data/##TestBuilds##/FirstTestBuild_Data/Managed/mscorlib.dll.d
 data/Assets/Textures/GreenHealth.png.i
 data/Library/metadata/f5/f571cbc3015b5f44d8a859c175d462a6.i
 data/##PutNewAssetsHere##/Test.txt.i
+data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Spark.mat.i
+data/##TestBuilds##/FirstTestBuild_Data/Managed/mscorlib.dll.i
 data/Library/metadata/e6/e667992b28845df99060a8f876d1d11b.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_59.png.meta.i
+data/FirstTestBuild_Data/Resources/unity default resources.d
 data/Assets/ZStandard Assets/Particles/Dust/Dust Storm.prefab.meta.i
 data/Library/metadata/d2/d236c2e07976ff942a0e23d979e8f4cb.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_67.png.meta.i
 data/Library/metadata/7b/7b277829b0b4991f100024a80dbc5c14.i
-data/Library/metadata/12/12747bdca86d344c2a4f1ea2bb362f17.i
-data/Library/metadata/42/429f849c2f8876b46a8372eab4a1d99f.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_28.png.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_59.png.i
+data/##TestBuilds##/TestBuild1.1_Data/Mono/etc/mono/1.0/DefaultWsdlHelpGenerator.aspx.i
+data/Library/metadata/80/803b103ce5633764f8c674d683e6c701.i
+data/Assets/ZStandard Assets/Particles/Legacy Particles/Small explosion.prefab.meta.i
 data/Assets/ZStandard Assets/Particles/Legacy Particles/large flames.prefab.i
-data/Assets/ZStandard Assets/Particles/Sources/Textures/ColorFlare.png.meta.i
+data/##TestBuilds##/FirstTestBuild_Data/Mono/mono.dll.d
+data/Assets/ZStandard Assets/Particles/Sources/Textures/smoketest2.psd.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_71.png.meta.i
 data/Assets/ZStandard Assets/Particles/Sparkles/Sparkle Rising.prefab.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/ThirdPersonCamera.js.meta.i
-data/Library/metadata/ef/ef23399c284e7574a8627b9f569663e6.i
+data/TestBuild1.1_Data/Mono/mono.dll.d
 data/Assets/Sprites/dun_mon1_spr_0.png.meta.i
-data/Assets/ZStandard Assets/Particles/Misc/Fireworks.prefab.meta.i
+data/Assets/Sprites/NPC/Lyra.png.meta.i
 data/Library/metadata/45/4568b8a4e00e6324a81a604ecbc49e2d.i
 data/New Unity Project.userprefs.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/SoapBubble.mat.i
 data/ProjectSettings/TimeManager.asset.i
 data/Library/metadata/74/74bcba72c2286ce429281c86d5928418.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_18.png.meta.i
-data/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb.i
+data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/PalmBark.psd.i
+data/Library/metadata/00/00000000000000006000000000000000.i
 data/Assets/Materials/Player.mat.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_12.png.i
 data/Assets/Sprites/NPC/Lyra_text_heads_spr_6.5.png.meta.i
+data/##TestBuilds##/FirstTestBuild_Data/Mono/etc/mono/mconfig/config.xml.i
+data/##TestBuilds##/FirstTestBuild.exe.i
 data/Assets/Scripts/Cam2D.cs.i
-data/Library/metadata/48/481dbeef69b807949a628012b16f7602.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_62.png.i
+data/##TestBuilds##/TestBuild1.1_Data/Mono/etc/mono/browscap.ini.i
+data/Library/metadata/27/27acebc9ad1110f6d00074c88d76c639.i
 data/Assets/Animations/TwilightWalkWest.anim.i
 data/Library/metadata/5c/5c6600d0e585d334e96abe57bf666057.i
+data/##TestBuilds##/TestBuild1.1_Data/Managed/Assembly-CSharp.dll.i
 data/Library/metadata/e7/e726b9f607b65e64498c4d0fc68b5b8b.i
-data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/Grass (Hill).psd.meta.i
+data/Library/metadata/31/3186f38ca67e7441e8299da2e169f9f9.i
 data/Library/AnnotationManager.i
+data/Library/metadata/e8/e83c2f831bb0fd14b92751cdcbe823ec.i
 data/Library/metadata/00/00000000000000007000000000000000.i
 data/Library/metadata/51/510306bf62c654a548c9d0193dbedd8e.i
-data/Assets/ZStandard Assets/Particles/Sources/Materials/Smoke Trail.mat.i
+data/Assets/ZStandard Assets/Physic Materials/Bouncy.physicmaterial.meta.i
 data/FirstTestBuild_Data/sharedassets0.assets.i
 data/Library/metadata/7a/7a598717ded698c4dbdd57c2260fa1e1.i
+data/Assets/Animations/TwilightIdleNorth.anim.i
 data/Library/metadata/7f/7ffd26957f89f334fa7dcdf86f4f1d9c.i
-data/Assets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter/Textures/constructor_normals.png.meta.i
+data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/GoodDirt.psd.i
 data/FirstTestBuild_Data/sharedassets0.assets.d
-data/Assets/Animations/TwilightIdleSouthEast.anim.meta.i
-data/Library/metadata/ca/ca49380a71a2bb64c830d06bd421b9d1.i
+data/Library/metadata/eb/ebd91f0a4d5d608469bb275ad33b0949.i
+data/Library/metadata/2b/2b21364bb71d4eb4dbce6894c82cd119.i
 data/TestBuild1.1_Data/Managed/Assembly-CSharp.dll.i
+data/##TestBuilds##/FirstTestBuild_Data/Managed/System.Core.dll.i
 data/Assets/ZStandard Assets/Particles/Misc/Light Snow.prefab.i
 data/Assets/ZStandard Assets/Particles/Misc/Light Snow.prefab.meta.i
-data/Assets/ZStandard Assets/Particles/Smoke/Detailed Smoke.prefab.meta.i
 data/Library/metadata/53/53394ebbb0a31a849a4dbae0af88bcc9.i
 data/Assets/Scripts/CharacterClasses.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/Snowflake.tif.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_68.png.meta.i
-data/Library/ScriptMapper.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_15.png.i
+data/##TestBuilds##/FirstTestBuild_Data/sharedassets0.assets.i
+data/Assets/Animations/TwilightWalkNorthEast.anim.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_52.png.i
-data/Library/metadata/56/56a1ad6de1dd8f24881bf031d6c8bed2.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_72.png.i
+data/FirstTestBuild_Data/Managed/UnityEngine.dll.d
 data/Library/metadata/9f/9f34c5fa8e5967a40b4cebeb9fb326c3.i
-data/Library/metadata/27/27acebc9ad1110f6d00074c88d76c639.i
-data/TestBuild1.1_Data/Mono/etc/mono/mconfig/config.xml.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_54.png.i
+data/Library/metadata/fe/fefb1f960cc34ab4581ef47b772db48e.i
+data/##TestBuilds##/FirstTestBuild_Data/sharedassets0.assets.d
+data/Library/metadata/42/429f849c2f8876b46a8372eab4a1d99f.i
 data/Library/metadata/e4/e4bce1317ad85464f9124b7b1850ecb2.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_35.png.i
 data/Assets/ZStandard Assets/Character Controllers/3rd Person Controller.prefab.i
@@ -344,28 +378,26 @@ data/Assets/ZStandard Assets/Scripts/Camera Scripts/MouseOrbit.js.meta.i
 data/TestBuild1.1_Data/sharedassets2.assets.i
 data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/PalmBark.psd.d
 data/Assets/Scripts/CharacterClasses/Vital.cs.meta.i
-data/Assets/ZStandard Assets/Particles/Sources/Textures/smoke3.tif.meta.i
 data/Library/metadata/54/54216e9ed42974e30967824b7f0b2806.i
 data/Assets/Scripts/Controller2D.cs.meta.i
 data/TestBuild1.1_Data/Mono/mono.dll.i
-data/Assets/ZStandard Assets/Particles/Legacy Particles/Small explosion.prefab.meta.i
-data/Assets/ZStandard Assets/Particles/Sources/Textures/smoketest2.psd.meta.i
-data/TestBuild1.1_Data/Mono/mono.dll.d
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_59.png.i
+data/Assets/ZStandard Assets/Particles/Sources/Textures/ColorFlare.png.meta.i
+data/Library/metadata/ef/ef23399c284e7574a8627b9f569663e6.i
 data/Library/metadata/d3/d3bdcace73465dd4389359d7bb9d3c36.i
-data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/PalmBark.psd.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_18.png.meta.i
 data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/PalmBark.psd.meta.i
 data/FirstTestBuild_Data/Mono/etc/mono/1.0/DefaultWsdlHelpGenerator.aspx.i
 data/Library/metadata/00/00000000000000009000000000000000.i
 data/Assets/Scripts/CharacterClasses/Skill.cs.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Fire Smoke.mat.meta.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_11.png.meta.i
-data/Library/metadata/c7/c78b114ae617a4914a6f9b9e0f796a0b.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_61.png.meta.i
 data/Library/metadata/1c/1ce98a631f4422f4b94fd7ccc90d9bff.i
+data/Library/metadata/c7/c78b114ae617a4914a6f9b9e0f796a0b.i
+data/FirstTestBuild_Data/Managed/Boo.Lang.dll.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_11.png.meta.i
 data/Library/metadata/53/531c14f8d5cdc4e5baa83ee6e16f783a.d
 data/Library/metadata/54/54e03e659ab274dd9b12c0538a9c4983.i
 data/Library/BuildSettings.asset.i
-data/Library/metadata/d5/d5396a3251db948279e0c7262385dafe.i
 data/Library/metadata/53/531c14f8d5cdc4e5baa83ee6e16f783a.i
 data/FirstTestBuild_Data/Resources/unity_builtin_extra.i
 data/Library/metadata/af/af4465c7aa1400a6573c907831d716c9.i
@@ -374,30 +406,31 @@ data/Assets/Sprites/TwilightOverworld/dun_twi_spr_21.png.meta.i
 data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures.meta.i
 data/Library/metadata/7c/7c98ffa948c8d43d5ac42a3e9f0ea897.i
 data/Assets/ZStandard Assets/Scripts/General Scripts/DragRigidbody.js.meta.i
-data/FirstTestBuild_Data/Mono/etc/mono/2.0/Browsers/Compat.browser.i
+data/Library/metadata/66/6685d213dcd37451eaa7643f63089046.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_66.png.meta.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_37.png.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_33.png.i
 data/New Unity Project-csharp.sln.i
-data/Assets/ZStandard Assets/Particles/Sources/Materials/Dust Material 1.mat.meta.i
+data/Library/metadata/4b/4bd2b32fbaaf0694783e6c3e9b4a0344.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_65.png.meta.i
 data/Library/metadata/c5/c56498775d8fc124ea41ffaf77349aa8.i
+data/Library/metadata/9d/9d7cde68850dc41479c2f7890cf74c0c.i
 data/Library/metadata/7e/7e6f84bf81c8d4de280f1133cff7e601.i
-data/Library/metadata/ea/ea552a3c1f2d4814abceb0be155fcf8f.i
+data/##TestBuilds##/FirstTestBuild_Data/Managed/System.dll.d
 data/Assets/ZStandard Assets/Physic Materials/Wood.physicmaterial.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/DustPoof.psd.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_34.png.meta.i
-data/Assets/ZStandard Assets/Particles/Misc.meta.i
+data/TestBuild1.1_Data/Resources/unity_builtin_extra.i
 data/Assets/ZStandard Assets/Particles/Sources/Animations/Light explosion.anim.meta.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_6.png.i
+data/Library/metadata/3c/3c9df9b0c4c460d4bbbef10649daadf6.i
 data/Library/metadata/1a/1a4a796e0e145474e8bdf4709b7e3ba5.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_78.png.i
 data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/Palm.fbx.meta.i
 data/Assets/Animations/TwilightIdleSouthWest.anim.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_51.png.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_73.png.meta.i
+data/Library/ProjectSettings.asset.i
 data/Assets/Textures/everyfree_day_battle_bg.png.d
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Dust Material 1.mat.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_58.png.meta.i
+data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/Materials/palmbranch.mat.i
 data/Assets/Textures/everyfree_day_battle_bg.png.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_17.png.i
 data/Assets/Scripts/Menu.cs.i
@@ -406,12 +439,15 @@ data/Assets/Sprites/TwilightOverworld/dun_twi_spr_53.png.meta.i
 data/Assets/ZStandard Assets/Particles/Smoke/Fluffy Smoke Large.prefab.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/smoke4.tif.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/FlameA.mat.meta.i
+data/FirstTestBuild_Data/Managed/System.dll.d
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_73.png.i
 data/Assets/ZStandard Assets/Particles/Misc/Fireworks.prefab.i
+data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/Cliff (Layered Rock).psd.d
 data/Library/metadata/6e/6e77d387966489d6cb6bb6ba39e09c45.i
-data/FirstTestBuild_Data/Mono/mono.dll.i
+data/Library/metadata/91/917465bd1f8dd014aae54c6377b2b2fc.i
 data/Assets/Scripts/CharacterClasses/Attribute.cs.meta.i
 data/Library/metadata/e7/e7d408c28925be148bd9ef32f4f28e44.i
+data/##TestBuilds##/FirstTestBuild_Data/Mono/etc/mono/1.0/DefaultWsdlHelpGenerator.aspx.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_46.png.i
 data/Library/metadata/51/514223105bebaa2418e738781154881a.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter/Materials/constructor_done.mat.i
@@ -419,44 +455,51 @@ data/Library/metadata/67/6793afeb1ba524134ae93ee3038763e0.i
 data/Library/metadata/40/40703a51f43913c4e8ec48719f16302d.i
 data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/PalmBranch.psd.d
 data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/PalmBranch.psd.i
-data/Library/metadata/c3/c399a5b52f840e64eb87a13fbddd9594.i
+data/Library/metadata/3c/3cfbd0dc941d27c4cb8b97bf0a0a0e43.i
 data/Assets/Scripts/GameManager.cs.i
 data/FirstTestBuild_Data/Managed/UnityEngine.dll.i
 data/Assets/ZStandard Assets/Physic Materials/Metal.physicmaterial.meta.i
 data/TestBuild1.1_Data/Managed/System.dll.d
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_30.png.i
 data/Assets/ZStandard Assets/Particles/Water/WaterFall.prefab.meta.i
+data/##TestBuilds##/FirstTestBuild_Data/Managed/System.dll.i
 data/Library/metadata/11/117efcb80de493a4c910339c502a68d2.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/ThirdPersonCamera.js.i
 data/Library/AssetServerCacheV3.i
+data/##TestBuilds##/FirstTestBuild_Data/Managed/UnityEngine.dll.i
+data/##TestBuilds##/FirstTestBuild_Data/Managed/Assembly-CSharp.dll.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_8.png.i
-data/Library/metadata/c6/c6e0767b1f8c34890ac245217f4b9731.i
+data/Library/metadata/d3/d3b7d84ffb95cc04aaeb74f19a10f034.i
+data/Library/metadata/85/85cde262bee344ae28a0bf86762219ac.i
 data/Assets/Animations/TwilightWalkSouth.anim.meta.i
 data/Library/MonoManager.asset.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/FPSInputController.js.i
 data/Assets/ZStandard Assets/Particles/Fire/Flame.prefab.i
 data/Assets/Animations/TwilightIdleNorth.anim.meta.i
+data/Assets/Scripts/CharacterClasses/BaseStat.cs.meta.i
 data/Library/metadata/00/0000000000000000c000000000000000.i
 data/Library/metadata/62/62f7c8a57ece2204695f3c7dc963d23c.i
 data/Assets/ZStandard Assets/Physic Materials/Wood.physicmaterial.meta.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_27.png.meta.i
+data/New Unity Project.sln.i
 data/Library/metadata/b5/b5ee9cd861ab75a4c9e0529ffe5a6535.i
-data/Assets/ZStandard Assets/Particles/Sources/Animations.meta.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_42.png.i
+data/##TestBuilds##/TestBuild1.1_Data/Managed/System.dll.d
+data/ProjectSettings/GraphicsSettings.asset.i
 data/Assets/Animations/TwilightWalkNorthWest.anim.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/foam.tga.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_9.png.meta.i
-data/Library/metadata/4c/4ce555b5b742e2f4b98f4e159b28ec98.i
+data/FirstTestBuild_Data/Mono/etc/mono/config.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_36.png.meta.i
 data/Library/metadata/74/747adb7e2ada0624b94e4b33a066945b.i
-data/Library/metadata/0f/0f8fb3c2a798f8f4f9d1acbb8466f5a1.i
+data/TestBuild1.1_Data/Managed/mscorlib.dll.d
 data/Assets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter.meta.i
-data/Assets/ZStandard Assets/Particles/Sources/Textures/Star02.png.meta.i
-data/TestBuild1.1_Data/Managed/mscorlib.dll.i
+data/Assets/Animations/TwilightIdleSouthWest.anim.meta.i
+data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/GoodDirt.psd.meta.i
 data/Assets/Scenes/Menu.unity.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_24.png.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/smoke2.tif.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_17.png.meta.i
-data/TestBuild1.1_Data/Managed/mscorlib.dll.d
+data/Library/metadata/46/46e871058d317418fab60bb84a290869.i
+data/##TestBuilds##/TestBuild1.1_Data/DialogueText/LyraDialogue.txt.i
+data/Library/metadata/b4/b4c038818e5cdbd429b09de67ba25d9d.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_1.png.meta.i
 data/Library/metadata/df/dfa0a27d714dab941b810843e94d092d.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/flametemplate.tif.i
@@ -467,83 +510,87 @@ data/Assets/Sprites/TwilightOverworld/dun_twi_spr_38.png.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/fire4.psd.i
 data/Assets/ZStandard Assets/Scripts/Camera Scripts/SmoothLookAt.js.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/Fireball.psd.i
-data/Library/metadata/80/803b103ce5633764f8c674d683e6c701.i
+data/FirstTestBuild_Data/Mono/etc/mono/2.0/Browsers/Compat.browser.i
 data/Assets/Textures/everyfree_day_battle_bg.png.meta.i
 data/Library/metadata/b1/b11b4ec6bb0274c438b29c1126ed41bd.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/flametemplate.tif.d
 data/Library/metadata/ff/ffe19e26bafc66b4a81302cd9d1a93cc.i
 data/Library/ScriptAssemblies/Assembly-UnityScript.dll.mdb.i
-data/Assets/Textures/RedHealth.png.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_21.png.i
 data/Library/metadata/1a/1a5d8cd24a805cd44b00c7f1e1e4d287.i
-data/Library/metadata/34/34c9fcec00ce63b49a6725d4eadead19.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter/Constructor.FBX.meta.i
-data/Library/metadata/30/309fa058db111724683629628ffafca3.i
+data/Assets/ZStandard Assets/Physic Materials/Metal.physicmaterial.i
 data/Library/metadata/cd/cdf7d3f1ad11f8d6d00011d98d76c639.i
-data/Library/metadata/eb/ebd91f0a4d5d608469bb275ad33b0949.i
+data/Assets/Animations/TwilightIdleSouthEast.anim.meta.i
 data/Library/metadata/88/88324f760c579473199bfbc4f1073097.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_31.png.i
-data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/PlatformInputController.js.meta.i
+data/Assets/Materials.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_48.png.i
 data/Library/metadata/d8/d847b881ff0ca4c45ad734b72b585811.i
 data/Library/metadata/cd/cd9dd79ed8b733e46aa3e7dc6bfbf7b9.i
-data/Assembly-UnityScript.unityproj.i
+data/Library/metadata/b9/b9a268fc98c474f721ff8c9bf8f5160e.i
 data/Library/metadata/3f/3fbc34d51ee4155dc17d8f49133f44ad.i
 data/Assets/ZStandard Assets/Particles/Water/WaterFall.prefab.i
 data/Library/metadata/6e/6e866b2c59f94f941aec47412e87dc1b.i
-data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/CharacterMotor.js.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_47.png.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/smoke.tif.meta.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_69.png.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_4.png.meta.i
 data/Assets/Sprites/menu_circle_spr_2.png.i
 data/Library/metadata/f7/f7d5f039a8e7848e889e1546d37dc39e.i
+data/ProjectSettings/NavMeshLayers.asset.i
 data/Library/metadata/32/327835a878f496675e402fdba3e0a4bc.i
-data/Library/metadata/3d/3ddb50e323b793449ad89bd605735e35.i
 data/TestBuild1.1_Data/output_log.txt.i
 data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/GoodDirt.psd.d
-data/Assets/ZStandard Assets/Physic Materials/Bouncy.physicmaterial.meta.i
-data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/GoodDirt.psd.i
-data/Assets/Materials/Background.mat.i
+data/Assets/ZStandard Assets/Particles/Sources/Materials/Smoke Trail.mat.i
+data/Assets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter/Textures/constructor_normals.png.meta.i
 data/Assets/Materials/Floor.mat.i
+data/##TestBuilds##/TestBuild1.1_Data/Mono/etc/mono/2.0/Browsers/Compat.browser.i
 data/Assets/ZStandard Assets/Particles/Fire/Fire1.prefab.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_27.png.i
 data/Assets/ZStandard Assets/Particles/Sources/Animations/Light explosion.anim.i
-data/Library/metadata/66/6685d213dcd37451eaa7643f63089046.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_29.png.i
 data/Assets/ZStandard Assets/Particles/Water/Water Surface Splash.prefab.meta.i
-data/Library/metadata/9d/9d7cde68850dc41479c2f7890cf74c0c.i
+data/ProjectSettings/Physics2DSettings.asset.i
 data/Library/metadata/68/68ccae4b14730fe4495c7d37545fc7e0.i
-data/Library/metadata/3c/3c9df9b0c4c460d4bbbef10649daadf6.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_6.png.i
 data/Library/ScriptAssemblies/Assembly-UnityScript.dll.i
+data/##TestBuilds##/FirstTestBuild_Data/Mono/etc/mono/2.0/settings.map.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_76.png.meta.i
 data/Assets/Sprites/menu_circle_spr_2.png.meta.i
 data/Library/metadata/d5/d5bb0e662a69e3442b35ca9466152f4a.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_37.png.meta.i
+data/##TestBuilds##/FirstTestBuild.exe.d
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_72.png.meta.i
 data/Assets/Scripts/NPC.cs.i
+data/##TestBuilds##/TestBuild1.1_Data/Managed/Assembly-UnityScript.dll.i
 data/Library/metadata/5c/5c54115eb5a2a4c4fb1b11b8e6100bd8.i
 data/Assembly-UnityScript-vs.unityproj.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/fire3.psd.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_17.png.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_61.png.i
-data/Library/metadata/b9/b9a268fc98c474f721ff8c9bf8f5160e.i
+data/Assembly-UnityScript.unityproj.i
 data/Library/metadata/f2/f2f45d80d5ebafc4893bfa483aa549a3.i
 data/TestBuild1.1_Data/Managed/Boo.Lang.dll.i
 data/Assets/Animations/TwilightIdleNorthWest.anim.meta.i
-data/Assets/ZStandard Assets/Particles/Legacy Particles/large flames.prefab.meta.i
+data/FirstTestBuild_Data/Mono/etc/mono/2.0/machine.config.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_15.png.meta.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_36.png.i
+data/Assets/Materials/Background.mat.i
 data/Library/metadata/23/2314ce3a3eecf4816bad3c9eca4de2e1.i
 data/Library/metadata/00/00000000000000003000000000000000.i
-data/Assets/ZStandard Assets/Particles/Sources/Textures/spark.tif.meta.i
-data/FirstTestBuild_Data/Mono/etc/mono/2.0/machine.config.i
+data/Assets/DialogueText/LyraDialogue.txt.meta.i
+data/Assets/ZStandard Assets/Particles/Legacy Particles/large flames.prefab.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_32.png.meta.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/FPSInputController.js.meta.i
 data/TestBuild1.1_Data/Mono/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx.i
 data/Library/metadata/d8/d86f85d1774260b4eae85013e29e142d.i
+data/Library/metadata/e3/e35d5ef933e25c2408ba33ee34e03408.i
 data/Library/metadata/b2/b29f3711897154b40bcc25ea13b81a5d.i
-data/Assets/ZStandard Assets/Particles/Sources/Materials/FlameC.mat.meta.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_62.png.i
 data/Library/metadata/6f/6f9c997d66da8ab4287fed3e6627402a.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/fire3.psd.meta.i
 data/Assets/ZStandard Assets/Particles/Fire/Flame.prefab.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_4.png.i
+data/Assets/ZStandard Assets/Particles/Water/Water Surface Splash.prefab.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_55.png.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Smoke3.mat.i
 data/Assets/Animations/Player.controller.i
@@ -555,24 +602,24 @@ data/Assets/Sprites/TwilightOverworld/dun_twi_spr_44.png.meta.i
 data/Assets/Animations/TwilightWalkNorthEast.anim.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/foam.tga.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Water Splash2.mat.i
+data/##TestBuilds##/TestBuild1.1_Data/Mono/etc/mono/2.0/settings.map.i
+data/Library/metadata/01/01174e4954348268c150b6f98c48939f.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/foam.tga.d
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_68.png.i
-data/Assets/Scenes.meta.i
+data/Library/metadata/18/18d553f4c6add5143bfbf5c59fa3bd39.i
 data/Library/metadata/ca/caf20877f7cce4351a9b1cfef8dcd186.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/smoketest2.psd.i
-data/Assets/ZStandard Assets/Particles/Sources/Textures/smoke2.tif.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_26.png.i
 data/Library/CurrentLayout.dwlt.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_3.png.meta.i
+data/Assets/ZStandard Assets/Particles/Sources/Materials/Water Splash1.mat.meta.i
 data/Library/metadata/9b/9b9106e5cf82342e78e4fcc288becd41.i
 data/Library/metadata/a7/a750fb9f9a79a0145b8ee807f4435f92.i
 data/Assets/Scenes/Scene2.unity.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_79.png.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/Star02.png.i
 data/Library/AssetImportState.i
-data/Assets/ZStandard Assets/Scripts/General Scripts.meta.i
 data/Library/metadata/5c/5c67a85b3f273334c9a17e42b782f35b.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_58.png.i
+data/Assets/ZStandard Assets/Particles/Sources/Materials/FlameC.mat.meta.i
 data/TestBuild1.1_Data/DialogueText/LyraDialogue.txt.meta.i
 data/Library/ScriptAssemblies/Assembly-CSharp.dll.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/fairydust.tif.meta.i
@@ -589,27 +636,30 @@ data/FirstTestBuild_Data/Managed/Assembly-UnityScript.dll.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_9.png.i
 data/Library/metadata/a2/a28540d6bcf674c1bb3dd7af7de640fc.i
 data/Library/metadata/d6/d6cdc79ec19714fcd980ca3f6ac01a0a.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_2.png.i
+data/Library/metadata/3d/3ddb50e323b793449ad89bd605735e35.i
+data/##TestBuilds##/TestBuild1.1_Data/Managed/mscorlib.dll.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_75.png.i
+data/##TestBuilds##/TestBuild1.1_Data/Managed/mscorlib.dll.d
 data/Assets/Scripts/CharacterClasses/Vital.cs.i
 data/FirstTestBuild_Data/sharedassets1.assets.i
 data/Library/metadata/3c/3c5bb2bad5622497490fdbd0f36e9674.i
-data/Assets/ZStandard Assets/Physic Materials/Rubber.physicmaterial.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_7.png.i
 data/Library/metadata/13/13a4ed327d7fba64fbb51516556e7e86.i
-data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion.meta.i
+data/Library/metadata/c3/c399a5b52f840e64eb87a13fbddd9594.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_45.png.i
-data/Assets/ZStandard Assets/Particles/Sources/Textures/smoke4.tif.i
-data/Assets/ZStandard Assets/Scripts/General Scripts/DragRigidbody.js.i
+data/##TestBuilds##/FirstTestBuild_Data/Mono/etc/mono/browscap.ini.i
+data/##TestBuilds##/TestBuild1.1_Data/DialogueText/LyraDialogue.txt.meta.i
+data/Library/metadata/bd/bd943c792514675e464dfc7a8c26d3e0.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_38.png.i
 data/Library/metadata/82/820a38890d8f1f742b289b29927ffb3b.i
-data/TestBuild1.1_Data/Mono/etc/mono/1.0/DefaultWsdlHelpGenerator.aspx.i
-data/FirstTestBuild_Data/output_log.txt.i
+data/Assets/ZStandard Assets/Particles/Misc.meta.i
+data/Assembly-CSharp-firstpass-vs.csproj.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_7.png.meta.i
 data/Assets/Textures/GreenHealth.png.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_70.png.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_20.png.i
-data/Library/metadata/e8/e83c2f831bb0fd14b92751cdcbe823ec.i
+data/##TestBuilds##/TestBuild1.1_Data/level0.i
+data/Library/metadata/12/12747bdca86d344c2a4f1ea2bb362f17.i
 data/Library/metadata/00/0000000000000000b000000000000000.i
 data/Library/metadata/2c/2c1d783bf980e0f4d99a2a304e1089d7.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/flametemplate.tif.meta.i
@@ -617,32 +667,33 @@ data/TestBuild1.1_Data/Mono/etc/mono/1.0/machine.config.i
 data/ProjectSettings/EditorSettings.asset.i
 data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/Grass&Rock.psd.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_35.png.meta.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_44.png.i
+data/Library/metadata/2e/2e583ef0c7af2904096be15c978e3e74.i
 data/Library/metadata/b6/b6742474aa2f8a04a812396bd7ea0d73.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Fairy Dust.mat.meta.i
-data/TestBuild1.1_Data/Mono/etc/mono/2.0/settings.map.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_54.png.i
 data/Assets/ZStandard Assets/Character Controllers/First Person Controller.prefab.i
 data/FirstTestBuild_Data/Mono/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/spark.tif.i
 data/Library/metadata/63/630cd92759ddec54e9d65dd0dc957764.i
 data/Library/metadata/eb/eb4a572e32f91884e88642c2883bff24.i
-data/Library/metadata/86/8600316ae23e146108aa156f81a2d56f.i
+data/Assets/ZStandard Assets/Particles/Misc/Sparks.prefab.i
 data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/Grass (Hill).psd.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Smoke4.mat.i
 data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/Grass (Hill).psd.d
 data/TestBuild1.1_Data/PlayerConnectionConfigFile.i
-data/Library/metadata/be/befda4d695d817342b31a03281064a58.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_72.png.i
 data/Library/metadata/99/99bfaccfd5140804aa5a7eeac3fa99ca.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_10.png.meta.i
 data/ProjectSettings/InputManager.asset.i
-data/Library/metadata/91/91b42d4fd0e777d46b5d09fef69d9b47.i
+data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_16.png.meta.i
-data/Library/metadata/44/440eb36db91ca410f800ff3cfe43572f.d
+data/Library/metadata/8c/8c1f929571ef549619212d9405d4f923.i
 data/Assets/ZStandard Assets/Terrain Assets/Terrain Grass/Grass.psd.i
-data/Assets/ZStandard Assets/Particles/Water/Water Surface Splash.prefab.i
-data/Assets/ZStandard Assets/Terrain Assets/Terrain Grass/Grass.psd.d
-data/Assets/ZStandard Assets/Particles/Sources/Materials/Smoke2.mat.meta.i
-data/Assets/Scenes/Scene2.unity.meta.i
+data/Library/metadata/60/60bca8f58a0b8478e946e6e86658cb29.i
+data/Assets/ZStandard Assets/Particles/Misc/Fireworks.prefab.meta.i
+data/Assets/Scenes.meta.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_49.png.i
+data/Library/metadata/02/028c11450244e4feabe6828fc2ec3e03.i
 data/ProjectSettings/ProjectSettings.asset.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter/Constructor.FBX.i
 data/Library/metadata/86/8636e662e0f7d440fa257e9dce592504.i
@@ -650,45 +701,45 @@ data/Library/metadata/65/65836931803ab5b4fb9f60bd418f4100.i
 data/Library/metadata/08/086035900e690c94c9efb20d639ebc01.i
 data/Library/metadata/02/028c11450244e4feabe6828fc2ec3e03.d
 data/TestBuild1.1_Data/mainData.i
-data/Assets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter/Constructor.FBX.d
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_30.png.meta.i
 data/Assets/ZStandard Assets/Character Controllers/First Person Controller.prefab.meta.i
 data/Assets/Sprites/NPC/Lyra.png.i
+data/##TestBuilds##/FirstTestBuild_Data/Mono/etc/mono/2.0/machine.config.i
 data/Library/metadata/44/449b48f7eb5d87a4baaa5fb73f875a59.d
 data/Library/metadata/00/00000000000000005000000000000000.i
 data/Library/metadata/00/00000000000000004000000000000000.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/MouseLook.cs.meta.i
-data/Library/metadata/00/00000000000000006000000000000000.i
+data/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb.i
 data/Library/metadata/44/449b48f7eb5d87a4baaa5fb73f875a59.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/PlatformInputController.js.i
-data/Library/metadata/31/3186f38ca67e7441e8299da2e169f9f9.i
+data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/Grass (Hill).psd.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_13.png.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_45.png.meta.i
 data/FirstTestBuild.exe.i
-data/Library/metadata/fa/fa9a139ead11e8d6d00011d98d76c639.i
+data/Library/metadata/ea/ea552a3c1f2d4814abceb0be155fcf8f.i
 data/FirstTestBuild.exe.d
 data/Library/metadata/39/398254b1511ebed43995e865a4c9ca97.i
-data/Assets/ZStandard Assets/Scripts/General Scripts/ActivateTrigger.cs.meta.i
-data/FirstTestBuild_Data/Managed/Boo.Lang.dll.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_63.png.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_61.png.meta.i
 data/Library/metadata/97/97b050d43ac7c4d2b9f6cbb587650761.d
 data/Library/metadata/d6/d61b820f2b123d34193f15060f09a440.i
-data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/Cliff (Layered Rock).psd.i
+data/Assets/ZStandard Assets/Particles/Smoke/Detailed Smoke.prefab.meta.i
 data/Assets/Animations/TwilightWalkWest.anim.meta.i
 data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/Materials/palmbark.mat.i
 data/Library/metadata/c8/c8634e062924929664361c08745211fb.i
-data/Assets/ZStandard Assets/Terrain Assets/Terrain Textures/Cliff (Layered Rock).psd.d
-data/Assets/ZStandard Assets/Particles/Smoke.meta.i
+data/Assets/ZStandard Assets/Physic Materials/Rubber.physicmaterial.i
 data/Library/metadata/c9/c9628c1189172d64c9cf911549b2027f.i
 data/Assets/Animations/TwilightWalkSouth.anim.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_16.png.i
-data/Library/metadata/a4/a4d409bb8cbb9dc4395915c40dac02e9.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/Snowflake.tif.i
 data/Library/metadata/56/5692846c5ce8f4ee08ef64bec4aad0bd.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_2.png.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_24.png.meta.i
 data/FirstTestBuild_Data/Mono/etc/mono/browscap.ini.i
-data/New Unity Project.sln.i
-data/ProjectSettings/GraphicsSettings.asset.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_27.png.meta.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_42.png.i
 data/Assets/DialogueText.meta.i
+data/Library/metadata/ca/cae09c86ad1122e5d0006ac98d76c639.i
 data/Library/metadata/88/885b1972ad11a921d000d37b8d76c639.i
 data/Assets/Animations/TwilightIdleSouthEast.anim.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_6.png.meta.i
@@ -705,42 +756,45 @@ data/Assets/Sprites/TwilightOverworld/dun_twi_spr_10.png.i
 data/Library/metadata/e9/e976c6d3ebc1e4a85aa7186a3192d8c5.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/fire4.psd.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Fire Add.mat.i
-data/TestBuild1.1_Data/level0.i
-data/Library/metadata/18/18d553f4c6add5143bfbf5c59fa3bd39.i
-data/Assets/ZStandard Assets/Particles/Sources/Materials/Water Splash1.mat.meta.i
+data/Assets/ZStandard Assets/Particles/Sources/Textures/smoke2.tif.meta.i
+data/Assets/ZStandard Assets/Particles/Sources/Textures/smoke3.tif.meta.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_3.png.meta.i
 data/Assets/Animations/TwilightIdleEast.anim.meta.i
+data/##TestBuilds##/FirstTestBuild_Data/mainData.i
 data/Library/metadata/6c/6c2ad21e4bcd82e429338589b2501207.i
 data/Library/metadata/64/642367443312c224bb40c297365867ac.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_76.png.i
-data/Assets/ZStandard Assets/Particles/Sources/Materials/Smoke Trail.mat.meta.i
+data/Assets/ZStandard Assets/Particles/Sources/Materials/Sparkles2.mat.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/flameD.tif.meta.i
+data/##TestBuilds##/FirstTestBuild_Data/Resources/unity default resources.i
 data/Library/metadata/2a/2acf9c8e812eff6459715d2b3dce2c96.i
 data/Library/metadata/16/169b10ce10f4327cb9f40f6b117ed8d7.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_77.png.i
 data/Assets/ZStandard Assets/Physic Materials.meta.i
 data/Library/metadata/b3/b365e6042890d4b1987423ed6bb8a08c.i
-data/Library/metadata/8c/8c1f929571ef549619212d9405d4f923.i
-data/Assets/ZStandard Assets/Scripts.meta.i
+data/Library/metadata/44/440eb36db91ca410f800ff3cfe43572f.d
 data/Assets/ZStandard Assets/Character Controllers/Sources.meta.i
 data/Library/metadata/44/440eb36db91ca410f800ff3cfe43572f.i
 data/Assets/Animations/TwilightIdleSouth.anim.i
-data/Library/metadata/a6/a6492410a11989d4ebbc4ca0159c531b.i
+data/Library/metadata/0f/0f8fb3c2a798f8f4f9d1acbb8466f5a1.i
 data/Library/metadata/8a/8a4debc9ad1110f6d00074c88d76c639.i
 data/Library/metadata/3c/3cadc5c144b6941fd9b94e6f6cbaa3cc.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Sparkles1.mat.i
-data/Assets/ZStandard Assets/Particles/Sources/Materials/Sparkles2.mat.meta.i
+data/Assets/ZStandard Assets/Particles/Sources/Materials/Smoke Trail.mat.meta.i
 data/Library/metadata/9e/9e8104ba1c38fb5469248702491cc45a.i
 data/Library/metadata/f6/f60723ea36fc34476899abc83a5309c9.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/SoapBubble.mat.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_23.png.i
 data/Library/metadata/ad/ad90f586d4fe1b942b46f0da520a0e61.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_2.png.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_60.png.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Fire Smoke.mat.i
+data/TestBuild1.1_Data/Managed/UnityEngine.dll.d
+data/Library/metadata/03/03d757657a45e8e4bba2da14777add07.i
 data/Library/metadata/bf/bfd675cc0db1d4656b75dc6d6ba91142.d
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Smoke4.mat.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/flameB.tif.meta.i
 data/Assets/Scripts/Door.cs.meta.i
-data/Assets/ZStandard Assets/Particles/Sources/Animations/Stop Emitting 1 sec.anim.i
+data/Assets/ZStandard Assets/Particles/Smoke/Fluffy Smoke.prefab.meta.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter/Materials.meta.i
 data/Library/metadata/36/36b35ba99cc1f054b9901a94c83db616.i
 data/Library/metadata/bf/bfd675cc0db1d4656b75dc6d6ba91142.i
@@ -755,62 +809,71 @@ data/Assets/ZStandard Assets/Particles/Sources/Textures/flameE.tif.meta.i
 data/ProjectSettings/TagManager.asset.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_22.png.i
 data/Assets/Animations/TwilightWalkSouthEast.anim.meta.i
+data/TestBuild1.1_Data/Mono/etc/mono/2.0/settings.map.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/CharacterMotor.js.i
-data/FirstTestBuild_Data/PlayerConnectionConfigFile.i
+data/##TestBuilds##/TestBuild1.1_Data/Resources/unity_builtin_extra.i
+data/Assets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter/Constructor.FBX.d
 data/Library/metadata/34/3414d166235d4e146be9b985a521ecac.i
 data/Assets/Prefabs.meta.i
 data/TestBuild1.1_Data/Managed/System.dll.i
 data/Assets/ZStandard Assets/Particles.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_56.png.i
 data/Library/AssetVersioning.db.i
-data/Library/metadata/c3/c31fa1a55f0c141ccb34e61d6bb78569.i
+data/Library/metadata/a4/a4d409bb8cbb9dc4395915c40dac02e9.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_55.png.meta.i
-data/ProjectSettings/NetworkManager.asset.i
-data/Library/metadata/ac/acd22cefe09441d2c7e801193b935495.i
+data/##TestBuilds##/FirstTestBuild_Data/Managed/Assembly-UnityScript.dll.i
+data/Library/metadata/55/55c3f306078dd4d44b8b620cdf19c818.i
+data/##TestBuilds##/FirstTestBuild_Data/Mono/etc/mono/1.0/machine.config.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_58.png.i
 data/TestBuild1.1.exe.d
 data/Library/metadata/96/96558d9af5ccba84da0a06dc9afa072d.i
-data/Library/metadata/d4/d42aa436e597ca946bf4977fb61b26ac.i
-data/Assets/Scripts/CharacterClasses/BaseStat.cs.meta.i
+data/Assets/ZStandard Assets/Particles/Sources/Materials.meta.i
+data/FirstTestBuild_Data/Mono/etc/mono/2.0/settings.map.i
+data/##TestBuilds##/TestBuild1.1_Data/Mono/etc/mono/1.0/machine.config.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_62.png.meta.i
 data/Library/metadata/1e/1e35f95f95c4d6c4eb50a82777a06c82.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_11.png.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Water Splash2.mat.meta.i
 data/Library/metadata/52/527393b10fb66418bbaa072e104f5a30.i
-data/TestBuild1.1.exe.i
-data/Assets/ZStandard Assets/Particles/Sources/Materials/FlameA.mat.i
+data/Assets/ZStandard Assets/Particles/Sources/Textures/smoke4.tif.i
+data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/ThirdPersonController.js.meta.i
 data/Assets/ZStandard Assets/Particles/Sources/Animations/Stop Emitting 2 sec.anim.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_50.png.i
+data/TestBuild1.1_Data/level0.i
 data/Library/metadata/3e/3e9e393d2624fc44c95a175f845bd883.i
-data/Library/metadata/00/0000000000000000a000000000000000.i
+data/Assets/ZStandard Assets/Particles/Sources/Textures/smokepuff1.psd.i
 data/Library/metadata/d4/d46b85ee907702f4187ac972e3c97132.i
 data/FirstTestBuild_Data/Managed/Assembly-CSharp.dll.i
-data/Library/metadata/c9/c994fde8e6848a3771503f184e0c9cb4.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_53.png.i
+data/Assets/Prefabs/Background.prefab.i
+data/##TestBuilds##/FirstTestBuild_Data/PlayerConnectionConfigFile.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_50.png.i
 data/Library/EditorUserSettings.asset.i
-data/FirstTestBuild_Data/Mono/etc/mono/config.i
+data/Assets/Prefabs/Background.prefab.meta.i
+data/##TestBuilds##/TestBuild1.1_Data/Managed/Boo.Lang.dll.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts.meta.i
 data/Assets/ZStandard Assets/Particles/Smoke/Detailed Smoke.prefab.i
-data/FirstTestBuild_Data/Managed/System.dll.d
+data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/MouseLook.cs.i
 data/Library/metadata/e5/e53c8c3dcc4ff59438bc9e86cb45c3f6.i
-data/Library/metadata/e4/e4e4cff51dff43545953848c2258e62c.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_20.png.meta.i
 data/TestBuild1.1_Data/Mono/etc/mono/browscap.ini.i
 data/Assets/Scripts/CharacterClasses/BaseStat.cs.i
 data/Library/EditorUserBuildSettings.asset.i
 data/Library/metadata/f7/f781c091d1c8647c380d5230adfaee54.i
 data/FirstTestBuild_Data/Managed/System.dll.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Spark.mat.meta.i
-data/ProjectSettings/DynamicsManager.asset.i
+data/##TestBuilds##/FirstTestBuild_Data/level0.i
+data/Library/metadata/44/44b3febaf5142a5429938ef0a0de2395.i
 data/Assets/Animations/TwilightWalkSouthEast.anim.i
 data/FirstTestBuild_Data/Mono/etc/mono/mconfig/config.xml.i
-data/Library/metadata/3c/3cfbd0dc941d27c4cb8b97bf0a0a0e43.i
+data/FirstTestBuild_Data/PlayerConnectionConfigFile.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/Smoke1.mat.meta.i
 data/Assets/ZStandard Assets/Particles/Legacy Particles/explosion.prefab.meta.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_64.png.i
+data/##TestBuilds##/TestBuild1.1_Data/Mono/etc/mono/mconfig/config.xml.i
+data/Assets/ZStandard Assets/Particles/Sources/Materials/Fairy Dust.mat.i
 data/Assets/ZStandard Assets/Particles/Sources/Animations/Stop Emitting ,5 sec.anim.i
 data/Library/guidmapper.i
 data/Assets/Scripts/NPC.cs.meta.i
-data/Assets/ZStandard Assets/Particles/Smoke/Fluffy Smoke.prefab.meta.i
-data/Library/metadata/7a/7af202a5580593f44868bd73e3b0a324.i
+data/Library/metadata/34/34c9fcec00ce63b49a6725d4eadead19.i
+data/##TestBuilds##/FirstTestBuild_Data/Managed/UnityEngine.dll.d
 data/Assets/Sprites/dun_mon1_spr_0.png.i
 data/Assets/ZStandard Assets/Particles/Sources/Materials/FlameE.mat.i
 data/Assets/ZStandard Assets/Physic Materials/Ice.physicmaterial.meta.i
@@ -818,98 +881,111 @@ data/Library/metadata/09/0990858c1535ed046bd9cc70c81fbdd4.i
 data/Library/ScriptAssemblies/CompilationCompleted.txt.i
 data/Assets/ZStandard Assets/Particles/Sparkles.meta.i
 data/TestBuild1.1_Data/Mono/etc/mono/2.0/Browsers/Compat.browser.i
-data/Library/metadata/00/00000000000000001000000000000000.i
+data/Library/metadata/11/11831d89f546a534d9c752144a1ee2cb.i
 data/Library/metadata/bb/bb393e804ad0e204cb1fcfbc9b8b0409.i
 data/TestBuild1.1_Data/sharedassets0.assets.d
+data/##TestBuilds##/TestBuild1.1_Data/Managed/UnityEngine.dll.i
 data/Library/metadata/c2/c2c3a184819d84e4cbdbc34d17459730.i
 data/ProjectSettings/QualitySettings.asset.i
 data/Assets/Animations.meta.i
 data/Library/metadata/00/00000000000000008000000000000000.i
 data/TestBuild1.1_Data/sharedassets0.assets.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/soapbubble.tif.i
-data/Library/metadata/c6/c6e0767b1f8c34890ac245217f4b9731.d
 data/TestBuild1.1_Data/sharedassets1.assets.i
 data/Library/metadata/ed/ed61fcce633362c4e9d0a91ae27a1cc2.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_19.png.i
 data/Library/metadata/fd/fd38d7fa1710ccc458ede7edfb2d720d.i
 data/Assets/Scripts/CharacterClasses/PlayerCharacter.cs.meta.i
-data/ProjectSettings/AudioManager.asset.i
+data/Assets/ZStandard Assets/Scripts.meta.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter/Textures/constructor_diffuse.png.meta.i
-data/Assets/ZStandard Assets/Terrain Assets/Terrain Grass/Grass2.psd.i
-data/Library/metadata/4b/4bd2b32fbaaf0694783e6c3e9b4a0344.i
+data/Assets/ZStandard Assets/Particles/Water/Water Fountain.prefab.meta.i
+data/Assets/ZStandard Assets/Particles/Sources/Materials/Dust Material 1.mat.meta.i
 data/Library/metadata/a8/a85981d041276df47ae74513dbdfebf8.i
 data/Library/metadata/0b/0b167d00b3108411a8a963cba5ddde1b.i
-data/Library/ProjectSettings.asset.i
-data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/Materials/palmbranch.mat.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_51.png.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_58.png.meta.i
 data/Library/metadata/8e/8e303788a4e296443b33942a5be85049.i
-data/Library/metadata/91/917465bd1f8dd014aae54c6377b2b2fc.i
+data/FirstTestBuild_Data/Mono/mono.dll.i
+data/##TestBuilds##/TestBuild1.1_Data/sharedassets1.assets.i
 data/Library/metadata/f3/f3d66f34459704a34b36657da3964ea1.i
 data/FirstTestBuild_Data/Mono/mono.dll.d
+data/Assets/ZStandard Assets/Particles/Sources/Materials/FlameD.mat.i
 data/Assets/ZStandard Assets/Particles/Dust/Dust Storm.prefab.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_0.png.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_63.png.meta.i
-data/Library/metadata/d3/d3b7d84ffb95cc04aaeb74f19a10f034.i
+data/Library/metadata/c6/c6e0767b1f8c34890ac245217f4b9731.i
 data/Assets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter/Textures/constructor_normals.png.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_79.png.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/SteamBlur.png.meta.i
 data/Assets/Animations/TwilightWalkNorth.anim.meta.i
 data/Library/metadata/e0/e097e0ca551c28647a5a126e44c35bbc.i
-data/TestBuild1.1_Data/Managed/UnityEngine.dll.d
+data/Library/metadata/e7/e79b4ee3b7b31ee499b1532270c7730d.i
+data/Library/metadata/c6/c6e0767b1f8c34890ac245217f4b9731.d
 data/Assets/ZStandard Assets/Scripts/Camera Scripts/SmoothFollow.js.i
 data/Library/metadata/4e/4ef9e5e7515eb834f987daac81c96cf9.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures.meta.i
-data/Library/metadata/e7/e79b4ee3b7b31ee499b1532270c7730d.i
+data/Assets/ZStandard Assets/Character Controllers.meta.i
 data/Library/metadata/da/da583b31d3f0ba146923ad23f20e6b82.i
-data/Library/metadata/01/01174e4954348268c150b6f98c48939f.i
+data/Assets/ZStandard Assets/Scripts/General Scripts.meta.i
 data/Library/expandedItems.i
-data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/Materials.meta.i
+data/Assets/ZStandard Assets/Terrain Assets/Terrain Grass/Grass2.psd.i
 data/Library/FailedAssetImports.txt.i
+data/##TestBuilds##/FirstTestBuild_Data/Resources/unity default resources.d
 data/Library/metadata/7e/7e0b0a994d8934541a387e092630b5db.i
 data/Assets/ZStandard Assets/Particles/Legacy Particles/TimedObjectDestructor.js.i
 data/Assets/ZStandard Assets/Particles/Sources/Textures/flameD.tif.i
-data/Library/metadata/1d/1d5ac211a643e447ca78c2d794a16381.i
-data/Library/metadata/e3/e35d5ef933e25c2408ba33ee34e03408.i
+data/Library/metadata/1d/1da1b40feb3e4c94286b4e87e47f99bb.i
+data/Library/metadata/7a/7af202a5580593f44868bd73e3b0a324.i
 data/Assets/ZStandard Assets/Particles/Legacy Particles/TimedObjectDestructor.js.meta.i
 data/Assets/Animations/TwilightWalkEast.anim.i
 data/Library/BuildPlayer.prefs.i
 data/Library/metadata/21/211fe8d109c934349893a31c2f98e538.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_73.png.meta.i
+data/Library/metadata/d5/d5396a3251db948279e0c7262385dafe.i
 data/TestBuild1.1_Data/Managed/System.Core.dll.i
 data/Assets/Scripts/GameManager.cs.meta.i
 data/Library/metadata/08/08f28e42a647e2a4cbd32e793359aa3c.i
+data/##TestBuilds##/FirstTestBuild_Data/Mono/etc/mono/2.0/Browsers/Compat.browser.i
 data/Library/metadata/18/18214e9d6af6248559d501391856f1c7.d
 data/Library/metadata/18/18214e9d6af6248559d501391856f1c7.i
-data/Assets/Textures/RedHealth.png.meta.i
-data/Library/metadata/16/167a5dfc7db6f00498fae53ce4a6adf4.i
+data/Assets/ZStandard Assets/Character Controllers/3rd Person Controller.prefab.meta.i
+data/Assets/ZStandard Assets/Particles/Smoke.meta.i
 data/Assets/ZStandard Assets/Particles/Fire.meta.i
 data/Assets/Scenes/Menu.unity.meta.i
-data/Library/metadata/bd/bd943c792514675e464dfc7a8c26d3e0.i
+data/Assets/ZStandard Assets/Scripts/General Scripts/DragRigidbody.js.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_40.png.i
 data/Library/metadata/cf/cfaafbc89b91086459ce31520e26350e.i
-data/Library/metadata/2e/2e583ef0c7af2904096be15c978e3e74.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_44.png.i
+data/Library/metadata/be/befda4d695d817342b31a03281064a58.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_50.png.meta.i
 data/Library/metadata/e5/e5bdb6135a74b444d8cebd065dbf9d08.i
-data/Assets/Animations/TwilightWalkNorthWest.anim.i
+data/Assets/ZStandard Assets/Particles/Sources/Textures/Fireball.psd.meta.i
+data/##TestBuilds##/FirstTestBuild_Data/Managed/Boo.Lang.dll.i
+data/##TestBuilds##/TestBuild1.1_Data/Managed/Mono.Security.dll.i
 data/Assets/Animations/TwilightIdleWest.anim.i
 data/Assets/ZStandard Assets/Scripts/Camera Scripts/SmoothFollow.js.meta.i
+data/##TestBuilds##/TestBuild1.1_Data/Managed/UnityEngine.dll.d
 data/Library/metadata/60/60fb16895cbaf4946906b6d63f3653ec.i
-data/Library/metadata/ca/cae09c86ad1122e5d0006ac98d76c639.i
+data/ProjectSettings/AudioManager.asset.i
 data/Library/metadata/07/073946e94d57ac04fb345d5c28d21992.i
 data/Library/metadata/13/13fe218a378a74c4fb3ffdd702cae47d.i
+data/##TestBuilds##/TestBuild1.1_Data/mainData.i
+data/##TestBuilds##/TestBuild1.1.exe.d
 data/Assets/ZStandard Assets/Terrain Assets.meta.i
 data/Assets/ZStandard Assets/Particles/Legacy Particles/Sparks.prefab.meta.i
-data/Library/metadata/03/03d757657a45e8e4bba2da14777add07.i
+data/Assets/Textures.meta.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_52.png.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_75.png.meta.i
-data/Library/metadata/29/29f2844e1d89a4ed09e527cd2039d6ea.i
+data/Assets/ZStandard Assets/Particles/Sources/Animations/Stop Emitting 1 sec.anim.i
 data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/Materials/palmbark.mat.meta.i
 data/Library/metadata/aa/aadd99b5f57c2486b98d31bcbb5c640e.i
 data/Assets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/Materials/palmbranch.mat.meta.i
 data/Library/metadata/c8/c81df2918c80c054ca3d436e62090893.i
-data/ProjectSettings/NavMeshLayers.asset.i
-data/Assets/Animations/TwilightIdleNorth.anim.i
+data/Assets/ZStandard Assets/Character Controllers/Sources/Scripts/CharacterMotor.js.meta.i
+data/Library/metadata/c3/c31fa1a55f0c141ccb34e61d6bb78569.i
 data/Library/metadata/2c/2c528fec5d95e4ac28cf46399b887662.i
 data/Assembly-CSharp.csproj.i
-data/Library/metadata/00/00000000000000004100000000000000.i
+data/##TestBuilds##/FirstTestBuild_Data/Mono/mono.dll.i
+data/Assets/ZStandard Assets/Particles/Smoke/Smoke Trail.prefab.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_8.png.meta.i
 data/Library/metadata/86/86e89c00939e6744d9992f2bcfe12066.i
 data/Library/metadata/54/5410a64fad11e8d6d00011d98d76c639.i
@@ -917,7 +993,7 @@ data/Assets/ZStandard Assets/Particles/Sources/Materials/Smoke.mat.meta.i
 data/Library/metadata/0a/0ab79d7f243824f5d9826bd83522c8df.i
 data/Assets/ZStandard Assets/Particles/Smoke/Fluffy Smoke Large.prefab.meta.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_57.png.i
-data/Library/metadata/11/11831d89f546a534d9c752144a1ee2cb.i
+data/Library/metadata/00/00000000000000001000000000000000.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_3.png.i
 data/Library/metadata/7e/7e3669cf306c78f48a1f9affe08eb0f9.i
 data/Library/metadata/ca/caa1ec025a7c049ec8f67b889fb33a6d.i
@@ -925,18 +1001,18 @@ data/Library/metadata/e2/e22cd688b01e48841937e16e9f63d4b2.i
 data/Library/metadata/0a/0a70c16c7b47ab048bc9e03b588c24f6.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_49.png.meta.i
 data/Library/metadata/5d/5d279a46c0798c841984e7569e242ce6.i
-data/Assets/Sprites/TwilightOverworld/dun_twi_spr_29.png.meta.i
+data/##TestBuilds##/FirstTestBuild_Data/Managed/Mono.Security.dll.i
 data/Library/metadata/1e/1e3cbdfe3644f44aeb1c053d96cc254e.i
-data/Library/metadata/1d/1da1b40feb3e4c94286b4e87e47f99bb.i
+data/Library/metadata/1d/1d5ac211a643e447ca78c2d794a16381.i
 data/Assets/Scripts/CharacterClasses/Attribute.cs.i
 data/Assets/ZStandard Assets/Particles/Legacy Particles/explosion.prefab.i
-data/Assets/ZStandard Assets/Particles/Sources/Materials/FlameD.mat.i
+data/Assets/ZStandard Assets/Particles/Sources/Animations.meta.i
 data/Library/metadata/10/10cbba88ac6b946418302c3173454ce3.i
-data/Assets/ZStandard Assets/Particles/Sources/Textures/Fireball.psd.meta.i
+data/Assets/Animations/TwilightWalkNorthWest.anim.i
 data/Library/metadata/18/189bee37e6c38dc4ba24904387ac7592.i
 data/Library/metadata/ce/cebee79f6224072448e4c338b916b5cd.i
-data/Assets/Textures.meta.i
+data/Assets/ZStandard Assets/Particles/Sources/Textures/spark.tif.meta.i
 data/Assets/ZStandard Assets/Particles/Legacy Particles/small flames.prefab.meta.i
 data/Library/metadata/68/68ec2fe99d1108b9d0006a298d76c639.i
 data/Assets/Sprites/TwilightOverworld/dun_twi_spr_74.png.meta.i
-data/Assets/ZStandard Assets/Particles/Water/Water Fountain.prefab.meta.i
+data/Assets/Sprites/TwilightOverworld/dun_twi_spr_39.png.i
