@@ -1,0 +1,10 @@
+Hi, I'm Lyra. I'll talk to you if you stand near and press "space"
+Currently I don't do anything except test dialouge.
+This is a test of a particularly long string to see if it will try to wrap, but sadly I doubt it will.
+Actualy it looks like that works now...
+I suppose an idexing system for my dialouge would make this more interesting...
+Now I need to say something really long to test font size and see if we can have three rows of text in the box, but why three?
+Pretty cool. Would you believe all my dialouge is stored in a text file?
+I hear a new menu system has been implemented.
+You should check it out with "esc" and use "space" to select options
+Now go explore or something, I'm gonna find a unicorn!
