@@ -54,7 +54,8 @@
      <Compile Include="Assets\Scripts\CharacterClasses\PlayerCharacter.cs" />
      <Compile Include="Assets\Scripts\CharacterClasses\Skill.cs" />
      <Compile Include="Assets\Scripts\CharacterClasses\Vital.cs" />
-     <Compile Include="Assets\Scripts\Controller2D.cs" />
+     <Compile Include="Assets\Scripts\Controller2DRB.cs" />
+     <Compile Include="Assets\Scripts\ControllerV3.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\Enemy2D.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />

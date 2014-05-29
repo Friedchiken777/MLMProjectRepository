@@ -9,6 +9,9 @@ using System.Collections;
 
 public class Cam2D : MonoBehaviour {
 
+	Transform target;
+
+	/*
 	//Player for camera to follow
 	public Transform player;
 
@@ -17,16 +20,21 @@ public class Cam2D : MonoBehaviour {
 
 	private Transform thisTransform;
 	private Vector2 velocity;
-
+	*/
 	// Use this for initialization
 	void Start () {
+		/*
 		thisTransform = transform;
 		velocity = new Vector2 (0.5f, 0.5f);
+		*/
+
+		target = GameObject.Find ("Player").transform;
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+	/*
 		//Temp storage of player position
 		Vector2 newPos2D = Vector2.zero;
 		newPos2D.x = Mathf.SmoothDamp (thisTransform.position.x, player.position.x, ref velocity.x, smoothRate);
@@ -35,6 +43,9 @@ public class Cam2D : MonoBehaviour {
 		//Update camera position to center on character
 		Vector3 newPos = new Vector3 (newPos2D.x, newPos2D.y, transform.position.z);
 		transform.position = Vector3.Slerp (transform.position, newPos, Time.time);
+	*/
+
+		transform.position = target.position + new Vector3 (0, 11, -12);
 	
 	}
 }

@@ -20,7 +20,7 @@ public class Enemy2D : MonoBehaviour {
 	void OnTriggerEnter(Collider col){
 		if (col.gameObject.tag == "Player") {
 			gm.SendMessage("PlayerDamage", attackDamage, SendMessageOptions.DontRequireReceiver);
-			gm.controller2D.SendMessage("TakenDamage", SendMessageOptions.DontRequireReceiver);
+			//gm.controller.SendMessage("TakenDamage", SendMessageOptions.DontRequireReceiver);
 		}
 	}
 

@@ -9,7 +9,7 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
-	public Controller2D controller2D;		//Reference to the players controller
+	public ControllerV3 controller;			//Reference to the players controller
 	public NPC npc;							//Reference to the NPC in scene (May need to be a list later...)
 	public Menu menu;						//Reference to the menu script
 
