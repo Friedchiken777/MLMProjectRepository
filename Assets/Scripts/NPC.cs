@@ -44,8 +44,6 @@ public class NPC : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Player") {
 			proximity = true;
-			Debug.Log("count" + words.Count);
-			Debug.Log("index" + wordsIndex);
 		}
 
 	}

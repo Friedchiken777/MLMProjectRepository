@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
 	public ControllerV3 controller;			//Reference to the players controller
 	public NPC npc;							//Reference to the NPC in scene (May need to be a list later...)
 	public Menu menu;						//Reference to the menu script
+	public GameObject camera;				//reference to game camera;
 
 	string level;							//name of current scene
 
@@ -70,7 +71,7 @@ public class GameManager : MonoBehaviour {
 			for (int h = 0; h < currentHealth; h++) {
 				GUI.DrawTexture (new Rect (screenPosX + (h * iconSizeX), screenPosY, iconSizeX, iconSizey), playerHealthTex, ScaleMode.ScaleToFit, true, 0);
 			}
-		//Draw Shop GUI
+		//Draw Shop/NPC GUI
 		} else if (this.tag == "Shop") {
 			GUI.skin.box.wordWrap = true;
 			GUI.skin.box.alignment = TextAnchor.UpperLeft;
@@ -125,18 +126,21 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	void StartBattle(){
+		
+	}
+
 	/// <summary>
 	/// Toggles the menu.
 	/// </summary>
 	void ToggleMenu(){
-		if (menuOpen == false) {
-			menuOpen = true;
+		menuOpen = !menuOpen;
+		/*if (!menuOpen) {
 			//Application.LoadLevelAdditive ("Menu");
-		}else if (menuOpen == true){
-			menuOpen = false;
+		}else if (menuOpen){
 			//Destroy(GameObject.Find("MenuCamera"));
 			//Destroy(GameObject.Find("MenuArt"));
-		}
+		}*/
 	}
 
 	/// <summary>

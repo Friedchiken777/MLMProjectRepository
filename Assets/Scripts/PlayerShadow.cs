@@ -5,6 +5,7 @@ public class PlayerShadow : MonoBehaviour {
 	
 	Transform target;
 	public float shadowScaleSize;
+	public LayerMask ground;
 
 
 	// Use this for initialization
@@ -18,7 +19,7 @@ public class PlayerShadow : MonoBehaviour {
 		//Raycast to determine Y position of new shadow location
 		RaycastHit floor;
 		Ray shadowRay = new Ray (target.position, Vector3.down);
-		Physics.Raycast (shadowRay, out floor);
+		Physics.Raycast (shadowRay, out floor, 10, ground);
 
 		//variables for now shadow location
 		float tempX = target.position.x;
@@ -26,13 +27,8 @@ public class PlayerShadow : MonoBehaviour {
 		float tempZ = target.position.z;
 		Vector3 shadowPos;
 
-		//Checks that ray isn't hitting the shadow and set new shadow position
-		if (floor.collider.tag != "Shadow") {
-			shadowPos = new Vector3 (tempX, tempY, tempZ);
-		}
-		else{
-			shadowPos = new Vector3 (tempX, this.transform.position.y, tempZ); 
-		}
+		//Sets new shadow location
+		shadowPos = new Vector3 (tempX, tempY, tempZ);
 		transform.position = shadowPos;
 
 		//Scale the shadow when jumping

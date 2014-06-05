@@ -117,7 +117,7 @@ public class ControllerV3 : MonoBehaviour {
 	/// </summary>
 	/// <param name="pos">Position to be teliported to.</param>
 	public void TeliportPlayer(Vector3 pos){
-		transform.position = new Vector3 (pos.x,pos.y,pos.z);
+		characterControler.transform.position = new Vector3 (pos.x,pos.y,pos.z);
 		Debug.Log (pos.ToString());
 	}
 	
