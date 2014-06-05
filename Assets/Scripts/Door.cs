@@ -9,7 +9,7 @@ using System.Collections;
 
 public class Door : MonoBehaviour {
 	public GameManager gm;			//Scenes Game Manager
-	public Controller2DRB player;		//Player using door
+	public ControllerV3 player;		//Player using door
 
 	public string doorName = "Scene1";	//Name of door to warp to
 	public Vector3 warpPosition;		//Location player should warp to after going through door

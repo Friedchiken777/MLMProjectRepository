@@ -46,7 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Cam2D.cs" />
+     <Compile Include="Assets\Scripts\BattleManager.cs" />
      <Compile Include="Assets\Scripts\CharacterClasses\Attribute.cs" />
      <Compile Include="Assets\Scripts\CharacterClasses\BaseCharacter.cs" />
      <Compile Include="Assets\Scripts\CharacterClasses\BaseStat.cs" />
@@ -54,14 +54,14 @@
      <Compile Include="Assets\Scripts\CharacterClasses\PlayerCharacter.cs" />
      <Compile Include="Assets\Scripts\CharacterClasses\Skill.cs" />
      <Compile Include="Assets\Scripts\CharacterClasses\Vital.cs" />
-     <Compile Include="Assets\Scripts\Controller2DRB.cs" />
-     <Compile Include="Assets\Scripts\ControllerV3.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\Enemy2D.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\Movement\Cam2D.cs" />
+     <Compile Include="Assets\Scripts\Movement\ControllerV3.cs" />
+     <Compile Include="Assets\Scripts\Movement\PlayerShadow.cs" />
      <Compile Include="Assets\Scripts\NPC.cs" />
-     <Compile Include="Assets\Scripts\PlayerShadow.cs" />
      <Compile Include="Assets\ZStandard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\ZStandard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
      <None Include="Assets\ZStandard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />

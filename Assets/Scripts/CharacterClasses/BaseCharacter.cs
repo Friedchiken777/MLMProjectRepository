@@ -1,9 +1,15 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// BaseCharacter.cs
+/// William George
+/// Stuff every character will need
+/// It has been taken from a tutorial by BurgZerg Arcade
+/// </summary>
+using UnityEngine;
 using System.Collections;
 using System;				//easy access to enum class
 
 public class BaseCharacter : MonoBehaviour {
-	private string name;
+	private string charName;
 	private int level;
 	private uint expToSpend;
 
@@ -12,7 +18,7 @@ public class BaseCharacter : MonoBehaviour {
 	private Skill[] skill;
 
 	public void Awake(){
-		name = string.Empty;
+		charName = string.Empty;
 		level = 0;
 		expToSpend = 0;
 
@@ -25,9 +31,9 @@ public class BaseCharacter : MonoBehaviour {
 		SetupSkills();
 	}
 
-	public string Name{
-		get {return name;}
-		set {name = value;}
+	public string CharName{
+		get {return charName;}
+		set {charName = value;}
 	}
 
 	public int Level{

@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour {
 	public ControllerV3 controller;			//Reference to the players controller
 	public NPC npc;							//Reference to the NPC in scene (May need to be a list later...)
 	public Menu menu;						//Reference to the menu script
-	public GameObject camera;				//reference to game camera;
+	public GameObject cam;					//reference to game camera;
 
 	string level;							//name of current scene
 

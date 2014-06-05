@@ -18,10 +18,11 @@ public class Enemy2D : MonoBehaviour {
 	/// </summary>
 	/// <param name="col">Col - the enemy's collider</param>
 	void OnTriggerEnter(Collider col){
-		if (col.gameObject.tag == "Player") {
+		Application.LoadLevel("BattleScene1");
+		/*if (col.gameObject.tag == "Player") {
 			gm.SendMessage("PlayerDamage", attackDamage, SendMessageOptions.DontRequireReceiver);
 			//gm.controller.SendMessage("TakenDamage", SendMessageOptions.DontRequireReceiver);
-		}
+		}*/
 	}
 
 }
