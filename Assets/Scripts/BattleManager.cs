@@ -54,12 +54,37 @@ public class BattleManager : MonoBehaviour {
 			}
 			//Chose switch
 			if (phase == 2){
-				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.3f), (Screen.width * 0.5f), (Screen.height * 0.1f)), "Menue")){
-					Debug.Log ("Switch still needs to be implemented...");
+				if(GUI.Button(new Rect ((Screen.width * 0.50f), (Screen.height * 0.3f), (Screen.width * 0.25f), (Screen.height * 0.1f)), "1")){
+					SwithPlayers(0);
 					turn = 2;
 					phase = 0;
 				}
-				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.4f), (Screen.width * 0.5f), (Screen.height * 0.1f)), "Back")){
+				if(GUI.Button(new Rect ((Screen.width * 0.50f), (Screen.height * 0.4f), (Screen.width * 0.25f), (Screen.height * 0.1f)), "2")){
+					SwithPlayers(1);
+					turn = 2;
+					phase = 0;
+				}
+				if(GUI.Button(new Rect ((Screen.width * 0.50f), (Screen.height * 0.5f), (Screen.width * 0.25f), (Screen.height * 0.1f)), "3")){
+					SwithPlayers(2);
+					turn = 2;
+					phase = 0;
+				}
+				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.3f), (Screen.width * 0.25f), (Screen.height * 0.1f)), "4")){
+					SwithPlayers(3);
+					turn = 2;
+					phase = 0;
+				}
+				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.4f), (Screen.width * 0.25f), (Screen.height * 0.1f)), "5")){
+					SwithPlayers(4);
+					turn = 2;
+					phase = 0;
+				}
+				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.5f), (Screen.width * 0.25f), (Screen.height * 0.1f)), "6")){
+					SwithPlayers(5);
+					turn = 2;
+					phase = 0;
+				}
+				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.6f), (Screen.width * 0.5f), (Screen.height * 0.1f)), "Back")){
 					phase = 0;
 				}
 			}
@@ -95,8 +120,12 @@ public class BattleManager : MonoBehaviour {
 			GameObject temp = Instantiate(players[i]) as GameObject;
 			fieldPlayers.Add(temp);
 			PlayerCharacter location = fieldPlayers[i].gameObject.GetComponent<PlayerCharacter>();
-			fieldPlayers[i].transform.position = new Vector3(playerSpawns[location.battlePosition].transform.position.x,enemySpawns[location.battlePosition].transform.position.y,enemySpawns[location.battlePosition].transform.position.z);
+			fieldPlayers[i].transform.position = new Vector3(playerSpawns[location.battlePosition].transform.position.x,playerSpawns[location.battlePosition].transform.position.y,playerSpawns[location.battlePosition].transform.position.z);
 		}
+	}
+
+	void SwithPlayers(int switchSpot){
+		Debug.Log ("Switch still needs to be implemented...");
 	}
 
 

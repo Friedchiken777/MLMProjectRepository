@@ -66,12 +66,14 @@ public class BaseCharacter : MonoBehaviour {
 		for (int x = 0; x < vital.Length; x++) {
 			vital[x] = new Vital();
 		}
+		SetupVitalModifiers ();
 	}
 
 	private void SetupSkills(){
 		for (int x = 0; x < skill.Length; x++) {
 			skill[x] = new Skill();
 		}
+		SetupSkillModifiers ();
 	}
 
 	public Attribute GetPrimaryAttribute(int index){

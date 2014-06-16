@@ -2,4 +2,5 @@
 
 	public int battlePosition;
 
+
 }

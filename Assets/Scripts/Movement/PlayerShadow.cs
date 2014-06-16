@@ -35,6 +35,10 @@ public class PlayerShadow : MonoBehaviour {
 		float scaleFactor = 1/(floor.distance+shadowScaleSize);
 		Vector3 shadowScale = new Vector3(scaleFactor,scaleFactor,scaleFactor);
 		this.transform.localScale = shadowScale;
+		//Makes the shadow lighter when higher
+		Color alphaChange = this.renderer.material.color;
+		alphaChange.a = scaleFactor;
+		this.renderer.material.color = alphaChange;
 
 	}
 }
