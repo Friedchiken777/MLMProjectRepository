@@ -9,9 +9,9 @@ public class BattleManager : MonoBehaviour {
 						enemySpawns, 		//Array of enemy spawn location on battlefield
 						playerSpawns; 		//Array of player spawn location on battlefield
 
-	public List<GameObject> fieldEnemies, //List of enemies currently on battlefield
-							fieldPlayers, //List of players currently on battlefield
-							switchPlayers;//List to keep track of swiching before actually switching
+	public List<GameObject> fieldEnemies, 	//List of enemies currently on battlefield
+							fieldPlayers,	 //List of players currently on battlefield
+							switchPlayers;	//List to keep track of swiching before actually switching
 
 	private List<Texture> portraits;	  	//List of player portraits
 	
@@ -54,6 +54,7 @@ public class BattleManager : MonoBehaviour {
 				}
 				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.4f), (Screen.width * 0.5f), (Screen.height * 0.1f)), "Switch")){
 					phase = 2;
+					//refreshes player positions in temorary switch list
 					switchPlayers.Clear ();
 					for (int i=0; i<fieldPlayers.Count; i++) {
 						switchPlayers.Add(fieldPlayers[i]);
@@ -101,6 +102,7 @@ public class BattleManager : MonoBehaviour {
 				}
 				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.7f), (Screen.width * 0.5f), (Screen.height * 0.1f)), "Back")){
 					phase = 0;
+					//Resets portrait positions if switch is cancelled 
 					portraits.Clear ();
 					for (int i=0; i<fieldPlayers.Count; i++) {
 						portraits.Add(fieldPlayers[i].gameObject.GetComponent<PlayerCharacter>().battlePic);
@@ -119,11 +121,17 @@ public class BattleManager : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// Function for the enemey turn.
+	/// </summary>
 	void EnemyTurn(){
 		Debug.Log ("Enemy Turn Occured, waiting for AI...");
 		turn = 1;
 	}
 
+	/// <summary>
+	/// Spawns the enemies.
+	/// </summary>
 	void SpawnEnemies(){
 		for (int i=0; i<enemiesInBattle; i++) {
 			int index = Random.Range(0,enemies.Length);
@@ -134,6 +142,9 @@ public class BattleManager : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// Spawns the players.
+	/// </summary>
 	void SpawnPlayers(){
 		for (int i=0; i<players.Length; i++) {
 			GameObject temp = Instantiate(players[i]) as GameObject;
@@ -145,7 +156,12 @@ public class BattleManager : MonoBehaviour {
 		SortPlayers ();
 
 	}
-	
+
+	/// <summary>
+	/// Calculates switch resultes durring switch selection.
+	/// </summary>
+	/// <param name="s1">s1 - position one of the switch.</param>
+	/// <param name="s2">s2 - position two of the switch.</param>
 	void SwithPlayers(int s1, int s2){
 		GameObject switchTemp1 = switchPlayers [s1];
 		GameObject switchTemp2 = switchPlayers [s2];
@@ -159,6 +175,9 @@ public class BattleManager : MonoBehaviour {
 		portraits.Insert(s1, switchTemp2.GetComponent<PlayerCharacter>().battlePic);		
 	}
 
+	/// <summary>
+	/// Called to finalize a switch.
+	/// </summary>
 	void SwitchPlayersConfirm(){
 		for (int i=0; i<switchPlayers.Count; i++) {
 			fieldPlayers.RemoveAt(i);
@@ -169,7 +188,10 @@ public class BattleManager : MonoBehaviour {
 		}
 
 	}
-	
+
+	/// <summary>
+	/// Sorts the Fieldplayers by battle position.
+	/// </summary>
 	void SortPlayers(){
 		List<GameObject> tempList = new List<GameObject>();
 		for (int i=0; i<fieldPlayers.Count; i++) {
@@ -186,6 +208,11 @@ public class BattleManager : MonoBehaviour {
 
 	}
 
+	/// <summary>
+	/// Helper function for switching.
+	/// Calls SwitchPlayers once two players have been selected.
+	/// </summary>
+	/// <param name="s">S.</param>
 	void CheckSwitch(int s){
 		if(firstClick){
 			switch1 = s;
