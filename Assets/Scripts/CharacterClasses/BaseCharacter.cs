@@ -9,9 +9,12 @@ using System.Collections;
 using System;				//easy access to enum class
 
 public class BaseCharacter : MonoBehaviour {
-	private string charName;
+	public string charName;
 	private int level;
 	private uint expToSpend;
+
+	public int battlePosition;
+	public Texture battlePic;
 
 	private Attribute[] primaryAttribute;
 	private Vital[] vital;

@@ -4,19 +4,37 @@ using System.Collections.Generic;			//Added to use lists
 
 public class BattleManager : MonoBehaviour {
 
-	public GameObject[] enemies, players, enemySpawns, playerSpawns; 
-	public List<GameObject> fieldEnemies, fieldPlayers;
-	public int enemiesInBattle;
+	public GameObject[] enemies, 			//Array of possible enimies
+						players, 			//Array of characters [0]Twi, [1]Pinkie, [2] AJ, [3] Dash, [4] Rarity, [5]Flutters
+						enemySpawns, 		//Array of enemy spawn location on battlefield
+						playerSpawns; 		//Array of player spawn location on battlefield
 
-	int turn;
-	int phase;
+	public List<GameObject> fieldEnemies, //List of enemies currently on battlefield
+							fieldPlayers, //List of players currently on battlefield
+							switchPlayers;//List to keep track of swiching before actually switching
 
+	private List<Texture> portraits;	  	//List of player portraits
+	
+	public int enemiesInBattle;				//Number of enemies participating in next battle
+
+	int turn;								//turn=1=player turn; turn=2=enemy turn (needs to be expanded for both more players and enemies)
+	int phase;								//phase=0=player action choose; phase=1=Attack choice; phase=2=Switch action; phase=3=Run action (also needs to be expanded)
+
+	bool firstClick;						//used when switching to determine if first member of switch has been selected
+	int switch1;							//used when switching to determine first member of switch
+	
 	// Use this for initialization
 	void Start () {	
+		fieldEnemies = new List<GameObject>();
+		fieldPlayers = new List<GameObject>();
+		switchPlayers = new List<GameObject>();
+		portraits = new List<Texture>();
 		SpawnEnemies ();
 		SpawnPlayers ();
 		turn = 1;
 		phase = 0;
+		firstClick = true;
+		switch1 = 0;
 	}
 	
 	// Update is called once per frame
@@ -36,6 +54,10 @@ public class BattleManager : MonoBehaviour {
 				}
 				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.4f), (Screen.width * 0.5f), (Screen.height * 0.1f)), "Switch")){
 					phase = 2;
+					switchPlayers.Clear ();
+					for (int i=0; i<fieldPlayers.Count; i++) {
+						switchPlayers.Add(fieldPlayers[i]);
+					}
 				}
 				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.5f), (Screen.width * 0.5f), (Screen.height * 0.1f)), "Run")){
 					phase = 3;
@@ -54,38 +76,35 @@ public class BattleManager : MonoBehaviour {
 			}
 			//Chose switch
 			if (phase == 2){
-				if(GUI.Button(new Rect ((Screen.width * 0.50f), (Screen.height * 0.3f), (Screen.width * 0.25f), (Screen.height * 0.1f)), "1")){
-					SwithPlayers(0);
+				if(GUI.Button(new Rect ((Screen.width * 0.50f), (Screen.height * 0.3f), (Screen.width * 0.25f), (Screen.height * 0.1f)), portraits[0])){
+					CheckSwitch(0);
+				}
+				if(GUI.Button(new Rect ((Screen.width * 0.50f), (Screen.height * 0.4f), (Screen.width * 0.25f), (Screen.height * 0.1f)), portraits[1])){
+					CheckSwitch(1);
+				}
+				if(GUI.Button(new Rect ((Screen.width * 0.50f), (Screen.height * 0.5f), (Screen.width * 0.25f), (Screen.height * 0.1f)), portraits[2])){
+					CheckSwitch(2);
+				}
+				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.3f), (Screen.width * 0.25f), (Screen.height * 0.1f)), portraits[3])){
+					CheckSwitch(3);
+				}
+				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.4f), (Screen.width * 0.25f), (Screen.height * 0.1f)), portraits[4])){
+					CheckSwitch(4);
+				}
+				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.5f), (Screen.width * 0.25f), (Screen.height * 0.1f)), portraits[5])){
+					CheckSwitch(5);
+				}
+				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.6f), (Screen.width * 0.5f), (Screen.height * 0.1f)), "Confirm")){
 					turn = 2;
 					phase = 0;
+					SwitchPlayersConfirm();
 				}
-				if(GUI.Button(new Rect ((Screen.width * 0.50f), (Screen.height * 0.4f), (Screen.width * 0.25f), (Screen.height * 0.1f)), "2")){
-					SwithPlayers(1);
-					turn = 2;
+				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.7f), (Screen.width * 0.5f), (Screen.height * 0.1f)), "Back")){
 					phase = 0;
-				}
-				if(GUI.Button(new Rect ((Screen.width * 0.50f), (Screen.height * 0.5f), (Screen.width * 0.25f), (Screen.height * 0.1f)), "3")){
-					SwithPlayers(2);
-					turn = 2;
-					phase = 0;
-				}
-				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.3f), (Screen.width * 0.25f), (Screen.height * 0.1f)), "4")){
-					SwithPlayers(3);
-					turn = 2;
-					phase = 0;
-				}
-				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.4f), (Screen.width * 0.25f), (Screen.height * 0.1f)), "5")){
-					SwithPlayers(4);
-					turn = 2;
-					phase = 0;
-				}
-				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.5f), (Screen.width * 0.25f), (Screen.height * 0.1f)), "6")){
-					SwithPlayers(5);
-					turn = 2;
-					phase = 0;
-				}
-				if(GUI.Button(new Rect ((Screen.width * 0.25f), (Screen.height * 0.6f), (Screen.width * 0.5f), (Screen.height * 0.1f)), "Back")){
-					phase = 0;
+					portraits.Clear ();
+					for (int i=0; i<fieldPlayers.Count; i++) {
+						portraits.Add(fieldPlayers[i].gameObject.GetComponent<PlayerCharacter>().battlePic);
+					}
 				}
 			}
 			//Chose run
@@ -121,12 +140,61 @@ public class BattleManager : MonoBehaviour {
 			fieldPlayers.Add(temp);
 			PlayerCharacter location = fieldPlayers[i].gameObject.GetComponent<PlayerCharacter>();
 			fieldPlayers[i].transform.position = new Vector3(playerSpawns[location.battlePosition].transform.position.x,playerSpawns[location.battlePosition].transform.position.y,playerSpawns[location.battlePosition].transform.position.z);
+			portraits.Add(temp.gameObject.GetComponent<PlayerCharacter>().battlePic);
+		}
+		SortPlayers ();
+
+	}
+	
+	void SwithPlayers(int s1, int s2){
+		GameObject switchTemp1 = switchPlayers [s1];
+		GameObject switchTemp2 = switchPlayers [s2];
+		switchPlayers.RemoveAt(s2);
+		switchPlayers.Insert(s2, switchTemp1);
+		portraits.RemoveAt(s2);
+		portraits.Insert(s2, switchTemp1.GetComponent<PlayerCharacter>().battlePic);
+		switchPlayers.RemoveAt(s1);
+		switchPlayers.Insert(s1, switchTemp2);
+		portraits.RemoveAt(s1);
+		portraits.Insert(s1, switchTemp2.GetComponent<PlayerCharacter>().battlePic);		
+	}
+
+	void SwitchPlayersConfirm(){
+		for (int i=0; i<switchPlayers.Count; i++) {
+			fieldPlayers.RemoveAt(i);
+			fieldPlayers.Insert(i, switchPlayers[i]);
+			fieldPlayers[i].gameObject.GetComponent<PlayerCharacter>().battlePosition = i;
+			PlayerCharacter location = fieldPlayers[i].gameObject.GetComponent<PlayerCharacter>();
+			fieldPlayers[i].transform.position = new Vector3(playerSpawns[location.battlePosition].transform.position.x,playerSpawns[location.battlePosition].transform.position.y,playerSpawns[location.battlePosition].transform.position.z);
+		}
+
+	}
+	
+	void SortPlayers(){
+		List<GameObject> tempList = new List<GameObject>();
+		for (int i=0; i<fieldPlayers.Count; i++) {
+			tempList.Add(fieldPlayers[i]);
+		}
+		for (int i=0; i<fieldPlayers.Count; i++) {
+			int pos = tempList[i].gameObject.GetComponent<PlayerCharacter>().battlePosition;
+			GameObject player = tempList[i];
+			fieldPlayers.RemoveAt(pos);
+			fieldPlayers.Insert(pos, player);
+			portraits.RemoveAt(pos);
+			portraits.Insert(pos, player.GetComponent<PlayerCharacter>().battlePic);
+		}
+
+	}
+
+	void CheckSwitch(int s){
+		if(firstClick){
+			switch1 = s;
+			firstClick = false;
+		}else{
+			SwithPlayers(switch1, s);
+			firstClick = true;
 		}
 	}
-
-	void SwithPlayers(int switchSpot){
-		Debug.Log ("Switch still needs to be implemented...");
-	}
-
-
+	
+	
 }
