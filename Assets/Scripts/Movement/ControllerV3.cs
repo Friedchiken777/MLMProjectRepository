@@ -21,7 +21,7 @@ public class ControllerV3 : MonoBehaviour {
 	int jumpGroundClear;						//Accounts for three frames where character is "grounded" after jump
 	bool grounded = false;
 
-	Vector3 pos;
+	Vector3 pos;								
 	
 	public float walkSpeed;						//speed player walks at
 	

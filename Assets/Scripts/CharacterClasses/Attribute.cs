@@ -39,9 +39,10 @@ public enum AttributeName{
 	Speed,
 	Accuracy,
 	Magic,
-	Physical_Defense,
-	Fire_Defense,
-	Lightning_Defense,
-	Ice_Defense,
-	Earth_Defense
+	Melee,
+	Fire,
+	Lightning,
+	Ice,
+	Earth,
+	Health
 }

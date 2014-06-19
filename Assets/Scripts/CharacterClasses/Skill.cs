@@ -31,6 +31,22 @@ public class Skill : ModifiedStat {
 /// List of Skill that can be learned
 /// </summary>
 public enum SkillName{
-
+	Healing,
+	Ailment_Resist,
+	Dodge,
+	Initiative,
+	Hit_Chance,
+	Crit_Chance,
+	MP_Recover,
+	Melee_Attack,
+	Melee_Defense,
+	Fire_Attack,
+	Fire_Defense,
+	Lightning_Attack,
+	Lightning_Defense,
+	Ice_Attack,
+	Ice_Defense,
+	Earth_Attack,
+	Earth_Defense
 }
 	

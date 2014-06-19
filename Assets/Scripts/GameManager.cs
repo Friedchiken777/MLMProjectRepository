@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
 	public Menu menu;						//Reference to the menu script
 	public GameObject cam;					//reference to game camera;
 
-	string level;							//name of current scene
+	//string level;							//name of current scene
 
 #region Variables for temporary health bar 
 	//Health Texture
@@ -155,7 +155,7 @@ public class GameManager : MonoBehaviour {
 	/// Saves the last level. Doesn't serve desired purpose yet...
 	/// </summary>
 	public void SaveLastLevel(){
-		level = Application.loadedLevelName;
+		//level = Application.loadedLevelName;
 	}
 
 	/// <summary>

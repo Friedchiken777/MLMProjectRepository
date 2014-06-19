@@ -7,11 +7,11 @@
 using UnityEngine;
 using System.Collections;
 
-public class Enemy2D : MonoBehaviour {
+public class EnemyInteract : MonoBehaviour {
 
 	public GameManager gm;		//Reference to scenes Game Manager
 
-	int attackDamage = 1;		//How much damage player takes after hitting enenmy
+	//int attackDamage = 1;		//How much damage player takes after hitting enenmy
 
 	/// <summary>
 	/// Checks is player hits enemy and currently deals the player damage when true

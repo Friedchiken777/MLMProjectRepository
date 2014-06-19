@@ -1,4 +1,10 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// GameSettings.cs
+/// William George
+/// Will eventually handel saving and loading
+/// It has been taken from a tutorial by BurgZerg Arcade
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class GameSettings : MonoBehaviour {
