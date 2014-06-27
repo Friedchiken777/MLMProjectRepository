@@ -43,6 +43,7 @@ public class ControllerV3 : MonoBehaviour {
 		pos = transform.position;
 		characterControler = GetComponent<CharacterController> ();
 		anim = gameObject.GetComponent<Animator> ();
+		anim.SetBool ("TwilightWalk", true);
 	}
 	
 	// Update is called once per frame
@@ -86,7 +87,6 @@ public class ControllerV3 : MonoBehaviour {
 			}
 			anim.SetBool("Jump", jump);
 			if (jump && grounded){
-				Debug.Log("hello");
 				if(jumpGroundClear++ > 3){
 					jump = false;
 				}
@@ -99,6 +99,56 @@ public class ControllerV3 : MonoBehaviour {
 		}
 		#endregion
 
+		#region Character Animation Switch
+		if(Input.GetKeyDown(KeyCode.Alpha1)){
+			anim.SetBool("AppleJackWalk", false);
+			anim.SetBool("TwilightWalk", true);
+			anim.SetBool("PinkiePieWalk",false);
+			anim.SetBool("RainbowDashWalk", false);
+			anim.SetBool("FluttershyWalk", false);
+			anim.SetBool("RarityWalk",false);
+		}
+		if(Input.GetKeyDown(KeyCode.Alpha2)){
+			anim.SetBool("AppleJackWalk", true);
+			anim.SetBool("TwilightWalk", false);
+			anim.SetBool("PinkiePieWalk",false);
+			anim.SetBool("RainbowDashWalk", false);
+			anim.SetBool("FluttershyWalk", false);
+			anim.SetBool("RarityWalk",false);
+		}
+		if(Input.GetKeyDown(KeyCode.Alpha3)){
+			anim.SetBool("AppleJackWalk", false);
+			anim.SetBool("TwilightWalk", false);
+			anim.SetBool("PinkiePieWalk",true);
+			anim.SetBool("RainbowDashWalk", false);
+			anim.SetBool("FluttershyWalk", false);
+			anim.SetBool("RarityWalk",false);
+		}
+		if(Input.GetKeyDown(KeyCode.Alpha4)){
+			anim.SetBool("AppleJackWalk", false);
+			anim.SetBool("TwilightWalk", false);
+			anim.SetBool("PinkiePieWalk",false);
+			anim.SetBool("RainbowDashWalk", true);
+			anim.SetBool("FluttershyWalk", false);
+			anim.SetBool("RarityWalk",false);
+		}
+		if(Input.GetKeyDown(KeyCode.Alpha5)){
+			anim.SetBool("AppleJackWalk", false);
+			anim.SetBool("TwilightWalk", false);
+			anim.SetBool("PinkiePieWalk",false);
+			anim.SetBool("RainbowDashWalk", false);
+			anim.SetBool("FluttershyWalk", true);
+			anim.SetBool("RarityWalk",false);
+		}
+		if(Input.GetKeyDown(KeyCode.Alpha6)){
+			anim.SetBool("AppleJackWalk", false);
+			anim.SetBool("TwilightWalk", false);
+			anim.SetBool("PinkiePieWalk",false);
+			anim.SetBool("RainbowDashWalk", false);
+			anim.SetBool("FluttershyWalk", false);
+			anim.SetBool("RarityWalk",true);
+		}
+		#endregion
 	}
 	
 	void FixedUpdate () {

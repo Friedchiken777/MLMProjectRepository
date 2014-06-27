@@ -10,7 +10,7 @@ public class PlayerShadow : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {	
-		target = GameObject.Find ("ShadowRay").transform;
+		target = GameObject.Find ("Player").transform;
 	}
 	
 	// Update is called once per frame
@@ -32,7 +32,7 @@ public class PlayerShadow : MonoBehaviour {
 		transform.position = shadowPos;
 
 		//Scale the shadow when jumping
-		float scaleFactor = 1/(floor.distance+shadowScaleSize);
+		float scaleFactor = (3/(floor.distance+shadowScaleSize));
 		Vector3 shadowScale = new Vector3(scaleFactor,scaleFactor,scaleFactor);
 		this.transform.localScale = shadowScale;
 		//Makes the shadow lighter when higher
