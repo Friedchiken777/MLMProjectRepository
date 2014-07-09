@@ -36,12 +36,14 @@ public class GameManager : MonoBehaviour {
 	//Main menu variables
 	bool menuOpen;							//Checks if menu is currently open
 	bool toggleMenu;						//Toggles Menu
+	bool characterMoveAllowed;
 	string menuSelection;					//Current item selected in menu
 
 	// Use this for initialization
 	void Start () {
 		menuOpen = false;
 		toggleMenu = false;
+		characterMoveAllowed = true;
 	}
 
 	// Update is called once per frame
@@ -135,6 +137,7 @@ public class GameManager : MonoBehaviour {
 	/// </summary>
 	void ToggleMenu(){
 		menuOpen = !menuOpen;
+		characterMoveAllowed = !characterMoveAllowed;
 		/*if (!menuOpen) {
 			//Application.LoadLevelAdditive ("Menu");
 		}else if (menuOpen){
@@ -149,6 +152,18 @@ public class GameManager : MonoBehaviour {
 	/// <returns><c>true</c>, if menu is open menuOpen, <c>false</c> otherwise.</returns>
 	public bool GetMenuOpen(){
 		return menuOpen;
+	}
+
+	public void SetMenuOpen(bool menuState){
+		menuOpen = menuState;
+	}
+
+	public bool GetCharacterMoveAllowed(){
+		return characterMoveAllowed;
+	}
+
+	public void SetCharacterMoveAllowed(bool moveState){
+		characterMoveAllowed = moveState;
 	}
 
 	/// <summary>

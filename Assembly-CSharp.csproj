@@ -70,6 +70,7 @@
      <Compile Include="Assets\Scripts\Movement\ControllerV3.cs" />
      <Compile Include="Assets\Scripts\Movement\PlayerShadow.cs" />
      <Compile Include="Assets\Scripts\NPC.cs" />
+     <Compile Include="Assets\Scripts\TwilightTargeting.cs" />
      <Compile Include="Assets\ZStandard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\ZStandard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
      <None Include="Assets\ZStandard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />

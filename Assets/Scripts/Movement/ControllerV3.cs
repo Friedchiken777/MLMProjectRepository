@@ -19,9 +19,7 @@ public class ControllerV3 : MonoBehaviour {
 	public float jumpHeight;					//Variable for jump height
 	bool jump;									//Checks if character is jumping
 	int jumpGroundClear;						//Accounts for three frames where character is "grounded" after jump
-	bool grounded = false;
-
-	Vector3 pos;								
+	bool grounded = false;							
 	
 	public float walkSpeed;						//speed player walks at
 	
@@ -32,6 +30,7 @@ public class ControllerV3 : MonoBehaviour {
 	public Animator anim;						//Reference to player animations
 	
 	float takenDamageTimer = 0.5f;				//Damage Indicator Timer
+
 	
 	// Use this for initialization
 	void Start () {
@@ -40,7 +39,6 @@ public class ControllerV3 : MonoBehaviour {
 		jumpHeight = 7;
 		jump = true;
 		walkSpeed = 5;
-		pos = transform.position;
 		characterControler = GetComponent<CharacterController> ();
 		anim = gameObject.GetComponent<Animator> ();
 		anim.SetBool ("TwilightWalk", true);
@@ -51,104 +49,91 @@ public class ControllerV3 : MonoBehaviour {
 		#region Movement
 
 		//Controls Character Controller
-		characterControler.Move (moveDirec * Time.deltaTime);
+		characterControler.enabled = gm.GetCharacterMoveAllowed();
+		//Checks if player movement is allowed before moving character
+		if(characterControler.enabled){
+			characterControler.Move (moveDirec * Time.deltaTime);
+		}
 		//Gets input directions
 		horizontal = Input.GetAxis ("Horizontal");
 		vertical = Input.GetAxis ("Vertical");
 
 		//Setting Variables for Animation
-		anim.SetFloat ("SpeedX", horizontal);			//float
-		anim.SetFloat ("SpeedY", vertical);				//float
-		anim.SetBool ("Disable", gm.GetMenuOpen ());	//bool
-
-		if(!gm.GetMenuOpen ()){
-			//Sets left and right movement to default keys
-			if ((horizontal > 0.01f || horizontal < 0.01f)) {
-				moveDirec.x = horizontal * walkSpeed;
-			}
-			//removes sliding
-			else {
-				moveDirec.x = 0;
-			}
-			//Sets up and down movement to default keys
-			if ((vertical > 0.01f || vertical < 0.01f)) {
-				moveDirec.z = vertical * walkSpeed;
-			}
-			//removes sliding
-			else {
-				moveDirec.z = 0;
-			}
-
-			//checks for jump
-			if (Input.GetButton ("Jump") && grounded) {
-				moveDirec.y = jumpHeight;
-				jump = true;
-				jumpGroundClear = 0;
-			}
-			anim.SetBool("Jump", jump);
-			if (jump && grounded){
-				if(jumpGroundClear++ > 3){
-					jump = false;
-				}
-			}
-			if (!jump && !grounded){
-				moveDirec.y = fallGravity;
-			}
-
-			SetWalkAnim();
+		anim.SetFloat ("SpeedX", horizontal);
+		anim.SetFloat ("SpeedY", vertical);	
+		anim.SetBool ("Disable", !gm.GetCharacterMoveAllowed());
+		
+		//Sets left and right movement to default keys
+		if ((horizontal > 0.01f || horizontal < 0.01f)) {
+			moveDirec.x = horizontal * walkSpeed;
 		}
+		//removes sliding
+		else {
+			moveDirec.x = 0;
+		}
+		//Sets up and down movement to default keys
+		if ((vertical > 0.01f || vertical < 0.01f)) {
+			moveDirec.z = vertical * walkSpeed;
+		}
+		//removes sliding
+		else {
+			moveDirec.z = 0;
+		}
+
+		//checks for jump
+		if (Input.GetButton ("Jump") && grounded) {
+			moveDirec.y = jumpHeight;
+			jump = true;
+			jumpGroundClear = 0;
+		}
+		anim.SetBool("Jump", jump);
+		if (jump && grounded){
+			if(jumpGroundClear++ > 3){
+				jump = false;
+			}
+		}
+		if (!jump && !grounded){
+			moveDirec.y = fallGravity;
+		}
+		SetWalkAnim();
 		#endregion
 
 		#region Character Animation Switch
 		if(Input.GetKeyDown(KeyCode.Alpha1)){
-			anim.SetBool("AppleJackWalk", false);
-			anim.SetBool("TwilightWalk", true);
-			anim.SetBool("PinkiePieWalk",false);
-			anim.SetBool("RainbowDashWalk", false);
-			anim.SetBool("FluttershyWalk", false);
-			anim.SetBool("RarityWalk",false);
+			TwilightSetCharacter();
 		}
 		if(Input.GetKeyDown(KeyCode.Alpha2)){
-			anim.SetBool("AppleJackWalk", true);
-			anim.SetBool("TwilightWalk", false);
-			anim.SetBool("PinkiePieWalk",false);
-			anim.SetBool("RainbowDashWalk", false);
-			anim.SetBool("FluttershyWalk", false);
-			anim.SetBool("RarityWalk",false);
+			ApplejackSetCharacter();
 		}
 		if(Input.GetKeyDown(KeyCode.Alpha3)){
-			anim.SetBool("AppleJackWalk", false);
-			anim.SetBool("TwilightWalk", false);
-			anim.SetBool("PinkiePieWalk",true);
-			anim.SetBool("RainbowDashWalk", false);
-			anim.SetBool("FluttershyWalk", false);
-			anim.SetBool("RarityWalk",false);
+			PinkiePieSetCharacter();
 		}
 		if(Input.GetKeyDown(KeyCode.Alpha4)){
-			anim.SetBool("AppleJackWalk", false);
-			anim.SetBool("TwilightWalk", false);
-			anim.SetBool("PinkiePieWalk",false);
-			anim.SetBool("RainbowDashWalk", true);
-			anim.SetBool("FluttershyWalk", false);
-			anim.SetBool("RarityWalk",false);
+			RainbowDashSetCharacter();
 		}
 		if(Input.GetKeyDown(KeyCode.Alpha5)){
-			anim.SetBool("AppleJackWalk", false);
-			anim.SetBool("TwilightWalk", false);
-			anim.SetBool("PinkiePieWalk",false);
-			anim.SetBool("RainbowDashWalk", false);
-			anim.SetBool("FluttershyWalk", true);
-			anim.SetBool("RarityWalk",false);
+			FluttershySetCharacter();
 		}
 		if(Input.GetKeyDown(KeyCode.Alpha6)){
-			anim.SetBool("AppleJackWalk", false);
-			anim.SetBool("TwilightWalk", false);
-			anim.SetBool("PinkiePieWalk",false);
-			anim.SetBool("RainbowDashWalk", false);
-			anim.SetBool("FluttershyWalk", false);
-			anim.SetBool("RarityWalk",true);
+			RaritySetCharacter();
 		}
 		#endregion
+
+		if(Input.GetKeyDown(KeyCode.B)){
+			PerfomCharacterSpecial();
+		}
+		if(Input.GetKey(KeyCode.B)){
+			if(anim.GetBool("TwilightWalk")){
+				gm.SetCharacterMoveAllowed(false);
+				gameObject.GetComponent<TwilightTargeting>().MoveBlock(transform);
+			}
+		}
+		if(Input.GetKeyUp(KeyCode.B)){
+			if(anim.GetBool("TwilightWalk")){
+				gm.SetCharacterMoveAllowed(true);
+				gameObject.GetComponent<TwilightTargeting>().DeselectTarget();
+			}
+		}
 	}
 	
 	void FixedUpdate () {
@@ -161,6 +146,135 @@ public class ControllerV3 : MonoBehaviour {
 		//anim.SetFloat ("vSpeed", rigidbody.velocity.y);
 	}
 	
+	/// <summary>
+	/// Sets the walk animation.
+	/// </summary>
+	void SetWalkAnim(){
+		if (!gm.GetCharacterMoveAllowed ()) {
+			vertical = 0;
+			horizontal = 0;
+		}
+		if (vertical > 0.01f) {
+			anim.SetBool ("North", true);
+			anim.SetBool ("South", false);
+			anim.SetBool ("East", false);
+			anim.SetBool ("West", false);
+			anim.SetBool ("WalkNorth", true);
+		}
+		else{
+			anim.SetBool ("WalkNorth", false);
+		}
+		if (vertical < -0.01f) {
+			anim.SetBool ("South", true);
+			anim.SetBool ("North", false);
+			anim.SetBool ("East", false);
+			anim.SetBool ("West", false);
+			anim.SetBool ("WalkSouth", true);
+		}
+		else{
+			anim.SetBool ("WalkSouth", false);
+		}
+		if (horizontal > 0.01f) {
+			anim.SetBool ("East", true);
+			anim.SetBool ("South", false);
+			anim.SetBool ("North", false);
+			anim.SetBool ("West", false);
+			anim.SetBool ("WalkEast", true);
+		}else{
+			anim.SetBool ("WalkEast", false);
+		}
+		if (horizontal < -0.01f) {
+			anim.SetBool ("West", true);
+			anim.SetBool ("South", false);
+			anim.SetBool ("East", false);
+			anim.SetBool ("North", false);
+			anim.SetBool ("WalkWest", true);
+		}
+		else{
+			anim.SetBool ("WalkWest", false);
+		}
+	}
+
+	void TwilightSetCharacter(){
+		anim.SetBool("ApplejackWalk", false);
+		anim.SetBool("TwilightWalk", true);
+		anim.SetBool("PinkiePieWalk",false);
+		anim.SetBool("RainbowDashWalk", false);
+		anim.SetBool("FluttershyWalk", false);
+		anim.SetBool("RarityWalk",false);
+	}
+
+	void ApplejackSetCharacter(){
+		anim.SetBool("ApplejackWalk", true);
+		anim.SetBool("TwilightWalk", false);
+		anim.SetBool("PinkiePieWalk",false);
+		anim.SetBool("RainbowDashWalk", false);
+		anim.SetBool("FluttershyWalk", false);
+		anim.SetBool("RarityWalk",false);
+	}
+
+	void RainbowDashSetCharacter(){
+		anim.SetBool("ApplejackWalk", false);
+		anim.SetBool("TwilightWalk", false);
+		anim.SetBool("PinkiePieWalk",false);
+		anim.SetBool("RainbowDashWalk", true);
+		anim.SetBool("FluttershyWalk", false);
+		anim.SetBool("RarityWalk",false);
+	}
+
+	void FluttershySetCharacter(){
+		anim.SetBool("ApplejackWalk", false);
+		anim.SetBool("TwilightWalk", false);
+		anim.SetBool("PinkiePieWalk",false);
+		anim.SetBool("RainbowDashWalk", false);
+		anim.SetBool("FluttershyWalk", true);
+		anim.SetBool("RarityWalk",false);
+	}
+
+	void PinkiePieSetCharacter(){
+		anim.SetBool("ApplejackWalk", false);
+		anim.SetBool("TwilightWalk", false);
+		anim.SetBool("PinkiePieWalk",true);
+		anim.SetBool("RainbowDashWalk", false);
+		anim.SetBool("FluttershyWalk", false);
+		anim.SetBool("RarityWalk",false);
+	}
+
+	void RaritySetCharacter(){
+		anim.SetBool("ApplejackWalk", false);
+		anim.SetBool("TwilightWalk", false);
+		anim.SetBool("PinkiePieWalk",false);
+		anim.SetBool("RainbowDashWalk", false);
+		anim.SetBool("FluttershyWalk", false);
+		anim.SetBool("RarityWalk",true);
+	}
+
+	void PerfomCharacterSpecial(){
+		if(anim.GetBool("TwilightWalk")){
+			Debug.Log ("Twilight Character Special Triggered!");
+			gameObject.GetComponent<TwilightTargeting>().AddAllTargets();
+			gameObject.GetComponent<TwilightTargeting>().TargetObject();
+		}
+		else if(anim.GetBool("ApplejackWalk")){
+			Debug.Log ("Applejack Character Special Triggered!");
+		}
+		else if(anim.GetBool("RainbowDashWalk")){
+			Debug.Log ("Rainbow Dash Character Special Triggered!");
+		}
+		else if(anim.GetBool("FluttershyWalk")){
+			Debug.Log ("Fluttershy Character Special Triggered!");
+		}
+		else if(anim.GetBool("PinkiePieWalk")){
+			Debug.Log ("Pinkie Pie Character Special Triggered!");
+		}
+		else if(anim.GetBool("RarityWalk")){
+			Debug.Log ("Rarity Character Special Triggered!");
+		}
+	}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ ///////////////////////////////WIP Functions////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	/// <summary>
 	/// Teliports the palyer.
 	/// Should mave player to a given position, doesn't work for some reason...
@@ -208,50 +322,4 @@ public class ControllerV3 : MonoBehaviour {
 		yield return new WaitForSeconds (takenDamageTimer);
 		renderer.enabled = true;
 	}
-
-	/// <summary>
-	/// Sets the walk animation.
-	/// </summary>
-	void SetWalkAnim(){
-		if (vertical > 0.01f) {
-			anim.SetBool ("North", true);
-			anim.SetBool ("South", false);
-			anim.SetBool ("East", false);
-			anim.SetBool ("West", false);
-			anim.SetBool ("WalkNorth", true);
-		}
-		else{
-			anim.SetBool ("WalkNorth", false);
-		}
-		if (vertical < -0.01f) {
-			anim.SetBool ("South", true);
-			anim.SetBool ("North", false);
-			anim.SetBool ("East", false);
-			anim.SetBool ("West", false);
-			anim.SetBool ("WalkSouth", true);
-		}
-		else{
-			anim.SetBool ("WalkSouth", false);
-		}
-		if (horizontal > 0.01f) {
-			anim.SetBool ("East", true);
-			anim.SetBool ("South", false);
-			anim.SetBool ("North", false);
-			anim.SetBool ("West", false);
-			anim.SetBool ("WalkEast", true);
-		}else{
-			anim.SetBool ("WalkEast", false);
-		}
-		if (horizontal < -0.01f) {
-			anim.SetBool ("West", true);
-			anim.SetBool ("South", false);
-			anim.SetBool ("East", false);
-			anim.SetBool ("North", false);
-			anim.SetBool ("WalkWest", true);
-		}
-		else{
-			anim.SetBool ("WalkWest", false);
-		}
-	}
-	
 }
