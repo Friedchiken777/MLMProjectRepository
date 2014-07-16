@@ -6,7 +6,7 @@
 /// </summary>
 using System;
 
-public class PlayerCharacter : BaseCharacter {
+public class PlayerCharacter : BaseEntity {
 
 	public int battlePosition;
 

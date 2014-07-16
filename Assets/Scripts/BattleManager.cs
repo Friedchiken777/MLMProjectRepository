@@ -1,4 +1,10 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// BattleManager.cs
+/// William George and Gordon Gu
+/// Manages the events of a battle
+/// Please don't kill me for the indents Will :(
+/// </summary>
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;			//Added to use lists
 
@@ -10,8 +16,9 @@ public class BattleManager : MonoBehaviour {
 						playerSpawns; 		//Array of player spawn location on battlefield
 
 	public List<GameObject> fieldEnemies, 	//List of enemies currently on battlefield
-							fieldPlayers,	 //List of players currently on battlefield
-							switchPlayers;	//List to keep track of swiching before actually switching
+							fieldPlayers,	//List of players currently on battlefield
+							switchPlayers,	//List to keep track of swiching before actually switching
+							turnOrder;		//List of turns in order with 0 being the current turn
 
 	private List<Texture> portraits;	  	//List of player portraits
 	
@@ -39,6 +46,8 @@ public class BattleManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		SortTurn();
+
 		if (turn == 2) {
 			EnemyTurn ();
 		}
@@ -149,9 +158,9 @@ public class BattleManager : MonoBehaviour {
 		for (int i=0; i<players.Length; i++) {
 			GameObject temp = Instantiate(players[i]) as GameObject;
 			fieldPlayers.Add(temp);
-			PlayerCharacter location = fieldPlayers[i].gameObject.GetComponent<PlayerCharacter>();
+			BaseEntity location = fieldPlayers[i].GetComponent<BaseEntity>();
 			fieldPlayers[i].transform.position = new Vector3(playerSpawns[location.battlePosition].transform.position.x,playerSpawns[location.battlePosition].transform.position.y,playerSpawns[location.battlePosition].transform.position.z);
-			portraits.Add(temp.gameObject.GetComponent<PlayerCharacter>().battlePic);
+			portraits.Add(temp.GetComponent<BaseEntity>().battlePic);
 		}
 		SortPlayers ();
 
@@ -168,11 +177,11 @@ public class BattleManager : MonoBehaviour {
 		switchPlayers.RemoveAt(s2);
 		switchPlayers.Insert(s2, switchTemp1);
 		portraits.RemoveAt(s2);
-		portraits.Insert(s2, switchTemp1.GetComponent<PlayerCharacter>().battlePic);
+		portraits.Insert(s2, switchTemp1.GetComponent<BaseEntity>().battlePic);
 		switchPlayers.RemoveAt(s1);
 		switchPlayers.Insert(s1, switchTemp2);
 		portraits.RemoveAt(s1);
-		portraits.Insert(s1, switchTemp2.GetComponent<PlayerCharacter>().battlePic);		
+		portraits.Insert(s1, switchTemp2.GetComponent<BaseEntity>().battlePic);		
 	}
 
 	/// <summary>
@@ -182,8 +191,8 @@ public class BattleManager : MonoBehaviour {
 		for (int i=0; i<switchPlayers.Count; i++) {
 			fieldPlayers.RemoveAt(i);
 			fieldPlayers.Insert(i, switchPlayers[i]);
-			fieldPlayers[i].gameObject.GetComponent<PlayerCharacter>().battlePosition = i;
-			PlayerCharacter location = fieldPlayers[i].gameObject.GetComponent<PlayerCharacter>();
+			fieldPlayers[i].GetComponent<BaseEntity>().battlePosition = i;
+			BaseEntity location = fieldPlayers[i].GetComponent<BaseEntity>();
 			fieldPlayers[i].transform.position = new Vector3(playerSpawns[location.battlePosition].transform.position.x,playerSpawns[location.battlePosition].transform.position.y,playerSpawns[location.battlePosition].transform.position.z);
 		}
 
@@ -198,12 +207,12 @@ public class BattleManager : MonoBehaviour {
 			tempList.Add(fieldPlayers[i]);
 		}
 		for (int i=0; i<fieldPlayers.Count; i++) {
-			int pos = tempList[i].gameObject.GetComponent<PlayerCharacter>().battlePosition;
+			int pos = tempList[i].GetComponent<BaseEntity>().battlePosition;
 			GameObject player = tempList[i];
 			fieldPlayers.RemoveAt(pos);
 			fieldPlayers.Insert(pos, player);
 			portraits.RemoveAt(pos);
-			portraits.Insert(pos, player.GetComponent<PlayerCharacter>().battlePic);
+			portraits.Insert(pos, player.GetComponent<BaseEntity>().battlePic);
 		}
 
 	}
@@ -222,6 +231,56 @@ public class BattleManager : MonoBehaviour {
 			firstClick = true;
 		}
 	}
-	
-	
+
+	/// <summary>
+	/// Sorts the sequence in which turns take place for enemies and the player characters.
+	/// </summary>
+	void SortTurn()
+	{
+		if (turnOrder.Count < (fieldEnemies.Count + fieldPlayers.Count))
+		{
+			turnOrder.AddRange(fieldEnemies);
+			turnOrder.AddRange(fieldPlayers);
+
+			GameObject tempStorage;
+			
+			for (int i = 1; i < turnOrder.Count; i++)
+			{
+				int j = i;
+				int a;
+				int b;
+				
+				while (j > 1)
+				{
+					a = turnOrder[j - 1].GetComponent<BaseEntity>().bSpeed;
+					b = turnOrder[j].GetComponent<BaseEntity>().bSpeed;
+
+					if (a < b)
+					{
+						tempStorage = turnOrder[j - 1];
+						turnOrder[j - 1] = turnOrder[j];
+						turnOrder[j] = tempStorage;
+						j--;
+					}
+					else
+					{
+						break;
+					}
+				}
+			}
+		}
+
+		if (turnOrder[0].CompareTag("Player"))
+		{
+			GameObject elementToRemove = turnOrder[0];
+			turnOrder.Add(elementToRemove);
+			turnOrder.RemoveAt(0);
+
+			turn = 1;
+		}
+		else
+		{
+			turn = 2;
+		}
+	}
 }
