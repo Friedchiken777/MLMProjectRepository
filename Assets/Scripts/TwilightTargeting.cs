@@ -17,6 +17,8 @@ public class TwilightTargeting : MonoBehaviour {
 	private Transform myTransform;
 
 	public float effectRadius;
+	public float characterRadius;
+	public float blockRebound;
 
 	public LayerMask twiBlocks;
 
@@ -32,7 +34,7 @@ public class TwilightTargeting : MonoBehaviour {
 		selectedTarget = null;
 		myTransform = transform;
 		AddAllTargets ();
-		effectRadius = 11.5f;
+		effectRadius = 10.5f;
 		moveSpeed = 3.0f;
 	}
 	
@@ -96,42 +98,62 @@ public class TwilightTargeting : MonoBehaviour {
 		if(selectedTarget != null){
 			selectedTarget.FindChild("Glow").GetComponent<SpriteRenderer>().enabled = false;
 			selectedTarget.rigidbody.useGravity = true;
-			selectedTarget = null;
 		}
 	}
 	
 	public void MoveBlock(Transform player)
 	{
+		Vector3 tempPos = selectedTarget.transform.position;
 		if(selectedTarget != null){
-			selectedTarget.rigidbody.useGravity = false;
-			if (selectedTarget.transform.position.z < player.position.z + zRange && selectedTarget.transform.position.z >= player.position.z - zRange - 0.5f) {
+			//Keeps Block from clipping through player
+			if(!(tempPos.z < player.position.z + characterRadius && tempPos.z > player.position.z - characterRadius) ||
+			   !(tempPos.x < player.position.x + characterRadius && tempPos.x > player.position.x - characterRadius) ||
+			   !(tempPos.y < player.position.y + (characterRadius * 2) && tempPos.y > player.position.y - (characterRadius * 2))){
+				selectedTarget.rigidbody.useGravity = false;
+				//Each outer if statement keeps block within an effect range
+				if (tempPos.z < player.position.z + zRange && tempPos.z >= player.position.z - zRange - 0.5f) {
+					if (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.UpArrow)) {
+						selectedTarget.transform.Translate((Vector3.forward * moveSpeed) * Time.deltaTime);
+					}
+				}
+				if (tempPos.z <= player.position.z + zRange + 0.5f && tempPos.z > player.position.z - zRange) {
+					if (Input.GetKey (KeyCode.S) || Input.GetKey (KeyCode.DownArrow)) {
+						selectedTarget.transform.Translate((Vector3.back * moveSpeed) * Time.deltaTime);
+					}
+				}
+				if (tempPos.x < player.position.x + xRange && tempPos.x >= player.position.x - xRange - 0.5f) {
+					if (Input.GetKey (KeyCode.D) || Input.GetKey (KeyCode.RightArrow)) {
+						selectedTarget.transform.Translate((Vector3.right * moveSpeed) * Time.deltaTime);
+					}
+				}
+					if (tempPos.x <= player.position.x + xRange + 0.5f && tempPos.x > player.position.x - xRange) {
+					if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) {
+						selectedTarget.transform.Translate((Vector3.left * moveSpeed) * Time.deltaTime);
+					}
+				}
+				if (tempPos.y <= player.position.y + yRange) {
+					if (Input.GetKey (KeyCode.Space)) {
+						selectedTarget.transform.Translate((Vector3.up * moveSpeed) * Time.deltaTime);
+					}
+				}
+			}
+			//knocks the block away from character
+			else{
 				if (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.UpArrow)) {
-					selectedTarget.rigidbody.MovePosition (selectedTarget.rigidbody.position + (Vector3.forward * moveSpeed) * Time.deltaTime);
-				}
-			}
-			if (selectedTarget.transform.position.z <= player.position.z + zRange + 0.5f && selectedTarget.transform.position.z > player.position.z - zRange) {
+					selectedTarget.transform.Translate((Vector3.back * moveSpeed * blockRebound) * Time.deltaTime);
+				}			
 				if (Input.GetKey (KeyCode.S) || Input.GetKey (KeyCode.DownArrow)) {
-					selectedTarget.rigidbody.MovePosition (selectedTarget.rigidbody.position + (-Vector3.forward * moveSpeed) * Time.deltaTime);
+					selectedTarget.transform.Translate((Vector3.forward * moveSpeed * blockRebound) * Time.deltaTime);
 				}
-			}
-			if (selectedTarget.transform.position.x < player.position.x + xRange && selectedTarget.transform.position.x >= player.position.x - xRange - 0.5f) {
 				if (Input.GetKey (KeyCode.D) || Input.GetKey (KeyCode.RightArrow)) {
-					selectedTarget.rigidbody.MovePosition (selectedTarget.rigidbody.position + (Vector3.right * moveSpeed) * Time.deltaTime);
+					selectedTarget.transform.Translate((Vector3.left * moveSpeed * blockRebound) * Time.deltaTime);
 				}
-			}
-			if (selectedTarget.transform.position.x <= player.position.x + xRange + 0.5f && selectedTarget.transform.position.x > player.position.x - xRange) {
 				if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) {
-					selectedTarget.rigidbody.MovePosition (selectedTarget.rigidbody.position + (-Vector3.right * moveSpeed) * Time.deltaTime);
-				}
-			}
-			if (selectedTarget.transform.position.y <= player.position.y + yRange) {
-				if (Input.GetKey (KeyCode.Space)) {
-					selectedTarget.rigidbody.MovePosition (selectedTarget.rigidbody.position + (Vector3.up * moveSpeed) * Time.deltaTime);
+					selectedTarget.transform.Translate((Vector3.right * moveSpeed * blockRebound) * Time.deltaTime);
 				}
 			}
 		}
 	}
-	
 }
 
 

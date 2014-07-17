@@ -36,7 +36,7 @@ public class ControllerV3 : MonoBehaviour {
 	void Start () {
 		gravity = -21f;
 		fallGravity = -4.1f;
-		jumpHeight = 7;
+		jumpHeight = 8;
 		jump = true;
 		walkSpeed = 5;
 		characterControler = GetComponent<CharacterController> ();
@@ -126,6 +126,9 @@ public class ControllerV3 : MonoBehaviour {
 			if(anim.GetBool("TwilightWalk")){
 				gm.SetCharacterMoveAllowed(false);
 				gameObject.GetComponent<TwilightTargeting>().MoveBlock(transform);
+			}
+			else{
+				gm.SetCharacterMoveAllowed(true);
 			}
 		}
 		if(Input.GetKeyUp(KeyCode.B)){

@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour {
 	//string level;							//name of current scene
 
 #region Variables for temporary health bar 
-	//Health Texture
+	/*//Health Texture
 	public Texture playerHealthTex;
 	public Texture lostHealthTex;
 	//Health Texture Position
@@ -28,21 +28,19 @@ public class GameManager : MonoBehaviour {
 	public int iconSizey = 10;
 
 	public int maxHealth = 10;				//Max player health
-	public int currentHealth = 10;			//Current player health
+	public int currentHealth = 10;			//Current player health*/
 #endregion
 	
 	private bool prox;						//Checks npc proximity
 
 	//Main menu variables
 	bool menuOpen;							//Checks if menu is currently open
-	bool toggleMenu;						//Toggles Menu
 	bool characterMoveAllowed;
 	string menuSelection;					//Current item selected in menu
 
 	// Use this for initialization
 	void Start () {
 		menuOpen = false;
-		toggleMenu = false;
 		characterMoveAllowed = true;
 	}
 
@@ -51,12 +49,6 @@ public class GameManager : MonoBehaviour {
 		//checks for key press to open menu
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 			ToggleMenu();
-		}
-		if (toggleMenu) {
-			if (Input.GetKeyDown(KeyCode.Space)){
-				ToggleMenu();
-				toggleMenu = false;
-			}
 		}
 	}
 
@@ -67,12 +59,12 @@ public class GameManager : MonoBehaviour {
 	void OnGUI(){
 		//Draw overworl Gui
 		if (this.tag == "Overworld") {
-			//Draws underlining red bar
+			/*//Draws underlining red bar
 			GUI.DrawTexture (new Rect (screenPosX, screenPosY, (iconSizeX * maxHealth), iconSizey), lostHealthTex, ScaleMode.StretchToFill, true, 0);
 			//Draws green bar according to health
 			for (int h = 0; h < currentHealth; h++) {
 				GUI.DrawTexture (new Rect (screenPosX + (h * iconSizeX), screenPosY, iconSizeX, iconSizey), playerHealthTex, ScaleMode.ScaleToFit, true, 0);
-			}
+			}*/
 		//Draw Shop/NPC GUI
 		} else if (this.tag == "Shop") {
 			GUI.skin.box.wordWrap = true;
@@ -90,7 +82,6 @@ public class GameManager : MonoBehaviour {
 			GUI.SetNextControlName ("Exit Menu");
 			if (GUI.Button (new Rect ((Screen.width * 0.25f), (Screen.height * 0.3f), (Screen.width * 0.5f), (Screen.height * 0.1f)), "Exit Menu")) {
 				Debug.Log ("Exit Menu");
-				toggleMenu = true;
 				ToggleMenu();
 			}
 			GUI.SetNextControlName ("Test1");
@@ -112,7 +103,7 @@ public class GameManager : MonoBehaviour {
 	}
 #endregion
 
-	/// <summary>
+	/*/// <summary>
 	/// Temporary method to damage player when they hit enemy
 	/// </summary>
 	/// <param name="damage">damage - amount of health player loses from hitting enemy</param>
@@ -126,7 +117,7 @@ public class GameManager : MonoBehaviour {
 			currentHealth = 0;
 			RestartScene();
 		}
-	}
+	}*/
 
 	void StartBattle(){
 		
