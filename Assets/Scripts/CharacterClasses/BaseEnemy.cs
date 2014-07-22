@@ -6,7 +6,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class BaseEnemy : BaseCharacter {
+public class BaseEnemy : BaseEntity {
 
 
 }

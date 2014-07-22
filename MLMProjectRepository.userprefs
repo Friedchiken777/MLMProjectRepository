@@ -1,28 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameSettings.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BattleManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\BattleManager.cs" Line="19" Column="2" />
-      <File FileName="Assets\Scripts\CharacterClasses\Attribute.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="158" Column="5" />
-      <File FileName="Assets\Scripts\NPC.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Door.cs" Line="33" Column="5" />
-      <File FileName="Assets\Scripts\CharacterClasses\BaseCharacter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CharacterClasses\ModifiedStat.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CharacterClasses\PlayerCharacter.cs" Line="14" Column="1" />
-      <File FileName="Assets\Scripts\CharacterClasses\Skill.cs" Line="50" Column="15" />
-      <File FileName="Assets\Scripts\CharacterClasses\Vital.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CharacterClasses\BaseStat.cs" Line="6" Column="5" />
-      <File FileName="Assets\Scripts\Movement\ControllerV3.cs" Line="5" Column="50" />
-      <File FileName="Assets\Scripts\Movement\PlayerShadow.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GameSettings.cs" Line="5" Column="57" />
-      <File FileName="Assets\Scripts\CharacterClasses\Mane6\ApplejackStats.cs" Line="11" Column="18" />
-      <File FileName="Assets\Scripts\CharacterClasses\Mane6\FluttershyStats.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CharacterClasses\Mane6\PinkiePieStats.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CharacterClasses\Mane6\RainbowDashStats.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CharacterClasses\Mane6\RarityStats.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CharacterClasses\Mane6\TwilightStats.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CharacterClasses\BaseEnemy.cs" Line="4" Column="38" />
+      <File FileName="Assets\Scripts\BattleManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
