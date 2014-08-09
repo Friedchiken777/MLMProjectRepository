@@ -51,6 +51,10 @@ public class TwilightTargeting : MonoBehaviour {
 		foreach (Collider target in TwiBoxes) {
 			AddTarget (target.transform.root.gameObject.transform);
 		}
+		//lets player move if no blocks are available to be selected
+		if (targets.Count == 0) {
+			selectedTarget = null;
+		}
 	}
 
 	public void AddTarget(Transform target){
@@ -99,12 +103,13 @@ public class TwilightTargeting : MonoBehaviour {
 			selectedTarget.FindChild("Glow").GetComponent<SpriteRenderer>().enabled = false;
 			selectedTarget.rigidbody.useGravity = true;
 		}
+
 	}
 	
 	public void MoveBlock(Transform player)
 	{
-		Vector3 tempPos = selectedTarget.transform.position;
 		if(selectedTarget != null){
+			Vector3 tempPos = selectedTarget.transform.position;
 			//Keeps Block from clipping through player
 			if(!(tempPos.z < player.position.z + characterRadius && tempPos.z > player.position.z - characterRadius) ||
 			   !(tempPos.x < player.position.x + characterRadius && tempPos.x > player.position.x - characterRadius) ||

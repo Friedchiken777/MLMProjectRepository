@@ -12,6 +12,7 @@ public class ControllerV3 : MonoBehaviour {
 	
 	public GameManager gm;						//Reference to scenes game manager
 	CharacterController characterControler;		//Reference to Character Controller (requires CaracterController be added to player
+	public GameObject targetingGuide;
 	Door door;									//Reference to levels door (may need to be a list later...)
 
 	public float gravity;
@@ -28,8 +29,18 @@ public class ControllerV3 : MonoBehaviour {
 	float vertical = 0;							//Vertical key velocity
 	
 	public Animator anim;						//Reference to player animations
+	string faceDirection;
 	
 	float takenDamageTimer = 0.5f;				//Damage Indicator Timer
+
+	float defaultRange = 2.0f;
+	float defaultVerticalModifier = 2.0f;
+	float cooldownPinkie, delayPinkie = 2.0f;
+	float cooldownDash, delayDash = 1.5f;
+	bool pinkieNotification;
+	bool dashNotification;
+
+	//bool waitActive;
 
 	
 	// Use this for initialization
@@ -42,6 +53,9 @@ public class ControllerV3 : MonoBehaviour {
 		characterControler = GetComponent<CharacterController> ();
 		anim = gameObject.GetComponent<Animator> ();
 		anim.SetBool ("TwilightWalk", true);
+		faceDirection = "s";
+		pinkieNotification = true;
+		dashNotification = true;
 	}
 	
 	// Update is called once per frame
@@ -95,6 +109,10 @@ public class ControllerV3 : MonoBehaviour {
 		if (!jump && !grounded){
 			moveDirec.y = fallGravity;
 		}
+		if(!grounded){
+		//	Debug.Log ("air");
+		}
+
 		SetWalkAnim();
 		#endregion
 
@@ -119,24 +137,76 @@ public class ControllerV3 : MonoBehaviour {
 		}
 		#endregion
 
+		#region Dungeon Abilities
+		if(anim.GetBool("PinkiePieWalk") && Time.time > cooldownPinkie + delayPinkie && pinkieNotification){
+			Debug.Log("Pinkie Pie Colldown Ended");
+			pinkieNotification = false;
+		}
+		if(anim.GetBool("RainbowDashWalk") && Time.time > cooldownDash + delayDash && dashNotification){
+			Debug.Log("Rainbow Dash Colldown Ended");
+			dashNotification = false;
+		}
+
 		if(Input.GetKeyDown(KeyCode.B)){
-			PerfomCharacterSpecial();
+			if(anim.GetBool("PinkiePieWalk")){
+				if (Time.time > cooldownPinkie + delayPinkie) {
+					gm.SetCharacterMoveAllowed(false);
+					PerfomCharacterSpecial();
+				}
+			}
+			else if(anim.GetBool("RainbowDashWalk")){
+				if (Time.time > cooldownDash + delayDash) {
+					gm.SetCharacterMoveAllowed(false);
+					PerfomCharacterSpecial();
+				}
+			}
+			else{
+				PerfomCharacterSpecial();
+			}
 		}
 		if(Input.GetKey(KeyCode.B)){
 			if(anim.GetBool("TwilightWalk")){
-				gm.SetCharacterMoveAllowed(false);
-				gameObject.GetComponent<TwilightTargeting>().MoveBlock(transform);
+				if(gameObject.GetComponent<TwilightTargeting>().selectedTarget != null){
+					gameObject.GetComponent<TwilightTargeting>().MoveBlock(transform);
+				}
+			}
+			else if(anim.GetBool("PinkiePieWalk")){
+				if (Time.time > cooldownPinkie + delayPinkie) {
+					gameObject.GetComponent<PinkieCannonShot>().AimCannon();
+				}
+			}
+			else if(anim.GetBool("RainbowDashWalk")){
+				if (Time.time > cooldownDash + delayDash) {
+					gameObject.GetComponent<DashArchery>().ChooseArrowAndAim();
+				}
+			}
+		}
+		if(Input.GetKeyUp(KeyCode.B)){
+			if(anim.GetBool("TwilightWalk")){
+				gameObject.GetComponent<TwilightTargeting>().DeselectTarget();
+				gm.SetCharacterMoveAllowed(true);
+			}
+			else if(anim.GetBool("PinkiePieWalk")){
+				if (Time.time > cooldownPinkie + delayPinkie) {
+					gameObject.GetComponent<PinkieCannonShot>().ShootCannon();
+					gm.SetCharacterMoveAllowed(true);
+					cooldownPinkie = Time.time;
+					pinkieNotification = true;
+				}
+			}
+			else if(anim.GetBool("RainbowDashWalk")){
+				if (Time.time > cooldownDash + delayDash) {
+					gameObject.GetComponent<DashArchery>().ShootArrow();
+					gm.SetCharacterMoveAllowed(true);
+					cooldownDash = Time.time;
+					dashNotification = true;
+				}
 			}
 			else{
 				gm.SetCharacterMoveAllowed(true);
 			}
 		}
-		if(Input.GetKeyUp(KeyCode.B)){
-			if(anim.GetBool("TwilightWalk")){
-				gm.SetCharacterMoveAllowed(true);
-				gameObject.GetComponent<TwilightTargeting>().DeselectTarget();
-			}
-		}
+		#endregion
 	}
 	
 	void FixedUpdate () {
@@ -153,45 +223,65 @@ public class ControllerV3 : MonoBehaviour {
 	/// Sets the walk animation.
 	/// </summary>
 	void SetWalkAnim(){
+		float animVertical;
+		float animHorizontal;
 		if (!gm.GetCharacterMoveAllowed ()) {
-			vertical = 0;
-			horizontal = 0;
+			animVertical = 0;
+			animHorizontal = 0;
+		} else{
+			animVertical = vertical;
+			animHorizontal = horizontal;
 		}
-		if (vertical > 0.01f) {
+		if (animVertical > 0.01f) {
 			anim.SetBool ("North", true);
 			anim.SetBool ("South", false);
 			anim.SetBool ("East", false);
 			anim.SetBool ("West", false);
 			anim.SetBool ("WalkNorth", true);
+			faceDirection = "n";
 		}
 		else{
 			anim.SetBool ("WalkNorth", false);
 		}
-		if (vertical < -0.01f) {
+		if (animVertical < -0.01f) {
 			anim.SetBool ("South", true);
 			anim.SetBool ("North", false);
 			anim.SetBool ("East", false);
 			anim.SetBool ("West", false);
 			anim.SetBool ("WalkSouth", true);
+			faceDirection = "s";
 		}
 		else{
 			anim.SetBool ("WalkSouth", false);
 		}
-		if (horizontal > 0.01f) {
+		if (animHorizontal > 0.01f) {
 			anim.SetBool ("East", true);
 			anim.SetBool ("South", false);
 			anim.SetBool ("North", false);
 			anim.SetBool ("West", false);
 			anim.SetBool ("WalkEast", true);
-		}else{
+			if(vertical == 0){
+				faceDirection = "e";
+			}
+			else{
+				faceDirection += "e";
+			}
+		}
+		else{
 			anim.SetBool ("WalkEast", false);
 		}
-		if (horizontal < -0.01f) {
+		if (animHorizontal < -0.01f) {
 			anim.SetBool ("West", true);
 			anim.SetBool ("South", false);
 			anim.SetBool ("East", false);
 			anim.SetBool ("North", false);
 			anim.SetBool ("WalkWest", true);
+			if(vertical == 0){
+				faceDirection = "w";
+			}
+			else{
+				faceDirection += "w";
+			}
 		}
 		else{
 			anim.SetBool ("WalkWest", false);
@@ -205,6 +295,7 @@ public class ControllerV3 : MonoBehaviour {
 		anim.SetBool("RainbowDashWalk", false);
 		anim.SetBool("FluttershyWalk", false);
 		anim.SetBool("RarityWalk",false);
+		targetingGuide.GetComponent<DirectionalTargeting> ().SetTargetingOffset (defaultRange);
 	}
 
 	void ApplejackSetCharacter(){
@@ -214,6 +305,7 @@ public class ControllerV3 : MonoBehaviour {
 		anim.SetBool("RainbowDashWalk", false);
 		anim.SetBool("FluttershyWalk", false);
 		anim.SetBool("RarityWalk",false);
+		targetingGuide.GetComponent<DirectionalTargeting> ().SetTargetingOffset (this.GetComponent<AJBuck>().GetRange());
 	}
 
 	void RainbowDashSetCharacter(){
@@ -223,6 +315,7 @@ public class ControllerV3 : MonoBehaviour {
 		anim.SetBool("RainbowDashWalk", true);
 		anim.SetBool("FluttershyWalk", false);
 		anim.SetBool("RarityWalk",false);
+		targetingGuide.GetComponent<DirectionalTargeting> ().SetTargetingOffset (this.GetComponent<DashArchery>().GetRange());
 	}
 
 	void FluttershySetCharacter(){
@@ -232,6 +325,7 @@ public class ControllerV3 : MonoBehaviour {
 		anim.SetBool("RainbowDashWalk", false);
 		anim.SetBool("FluttershyWalk", true);
 		anim.SetBool("RarityWalk",false);
+		targetingGuide.GetComponent<DirectionalTargeting> ().SetTargetingOffset (defaultRange);
 	}
 
 	void PinkiePieSetCharacter(){
@@ -241,6 +335,7 @@ public class ControllerV3 : MonoBehaviour {
 		anim.SetBool("RainbowDashWalk", false);
 		anim.SetBool("FluttershyWalk", false);
 		anim.SetBool("RarityWalk",false);
+		targetingGuide.GetComponent<DirectionalTargeting> ().SetTargetingOffset (this.GetComponent<PinkieCannonShot>().GetRange());
 	}
 
 	void RaritySetCharacter(){
@@ -250,29 +345,66 @@ public class ControllerV3 : MonoBehaviour {
 		anim.SetBool("RainbowDashWalk", false);
 		anim.SetBool("FluttershyWalk", false);
 		anim.SetBool("RarityWalk",true);
+		targetingGuide.GetComponent<DirectionalTargeting> ().SetTargetingOffset (defaultRange);
 	}
 
 	void PerfomCharacterSpecial(){
 		if(anim.GetBool("TwilightWalk")){
 			Debug.Log ("Twilight Character Special Triggered!");
+			gm.SetCharacterMoveAllowed(false);
 			gameObject.GetComponent<TwilightTargeting>().AddAllTargets();
 			gameObject.GetComponent<TwilightTargeting>().TargetObject();
 		}
 		else if(anim.GetBool("ApplejackWalk")){
 			Debug.Log ("Applejack Character Special Triggered!");
+			gm.SetCharacterMoveAllowed(false);
+			gameObject.GetComponent<AJBuck>().Buck();
 		}
 		else if(anim.GetBool("RainbowDashWalk")){
+			//gm.SetCharacterMoveAllowed(false);
 			Debug.Log ("Rainbow Dash Character Special Triggered!");
 		}
 		else if(anim.GetBool("FluttershyWalk")){
 			Debug.Log ("Fluttershy Character Special Triggered!");
 		}
 		else if(anim.GetBool("PinkiePieWalk")){
+			//gm.SetCharacterMoveAllowed(false);
 			Debug.Log ("Pinkie Pie Character Special Triggered!");
 		}
 		else if(anim.GetBool("RarityWalk")){
 			Debug.Log ("Rarity Character Special Triggered!");
+			gameObject.GetComponent<RarityReveal>().ShowSecrets();
 		}
+	}
+
+	public string GetFaceDirection(){return faceDirection;}
+
+	public float GetDefaultVerticalModifier(){return defaultVerticalModifier;}
+
+	/*public IEnumerator Wait(float s){
+		waitActive = true;
+		Debug.Log ("Hi");
+		yield return new WaitForSeconds (s);
+		waitActive = false;
+		Debug.Log ("Bye");
+	}*/
+
+	void OnCollisionEnter(Collision col){
+		if(anim.GetBool("PinkiePieWalk") && !grounded){
+			if(faceDirection.Contains("n")){
+				this.transform.Translate((Vector3.back * 2) * Time.deltaTime);
+			}
+			if(faceDirection.Contains("s")){
+				this.transform.Translate((Vector3.forward * 2) * Time.deltaTime);
+			}
+			if(faceDirection.Contains("e")){
+				this.transform.Translate((Vector3.left * 2) * Time.deltaTime);
+			}
+			if(faceDirection.Contains("w")){
+				this.transform.Translate((Vector3.right * 2) * Time.deltaTime);
+			}
+		}
+
 	}
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
