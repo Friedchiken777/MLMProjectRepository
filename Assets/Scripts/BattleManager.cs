@@ -21,7 +21,8 @@ public class BattleManager : MonoBehaviour
                             switchPlayers,	//List to keep track of swiching before actually switching
                             turnOrder;		//List of turns in order with 0 being the current turn
 
-    private List<Texture> portraits;	  	//List of player portraits
+	private List<Texture> turnPortraits;		//List of player turn portraits
+    private List<Texture> switchPortraits;	  	//List of player switch portraits
 
     public int enemiesInBattle;				//Number of enemies participating in next battle
 
@@ -37,7 +38,9 @@ public class BattleManager : MonoBehaviour
         fieldEnemies = new List<GameObject>();
         fieldPlayers = new List<GameObject>();
         switchPlayers = new List<GameObject>();
-        portraits = new List<Texture>();
+		turnOrder = new List<GameObject>();
+		turnPortraits = new List<Texture>();
+        switchPortraits = new List<Texture>();
         SpawnEnemies();
         SpawnPlayers();
         CreateTurnList();
@@ -60,7 +63,9 @@ public class BattleManager : MonoBehaviour
 
     void OnGUI()
     {
-        //Players Turn
+		DrawTurnOrder();
+
+		//Players Turn
         if (turn == 1)
         {
             //Select action
@@ -103,27 +108,27 @@ public class BattleManager : MonoBehaviour
             //Chose switch
             if (phase == 2)
             {
-                if (GUI.Button(new Rect((Screen.width * 0.50f), (Screen.height * 0.3f), (Screen.width * 0.25f), (Screen.height * 0.1f)), portraits[0]))
+                if (GUI.Button(new Rect((Screen.width * 0.50f), (Screen.height * 0.3f), (Screen.width * 0.25f), (Screen.height * 0.1f)), switchPortraits[0]))
                 {
                     CheckSwitch(0);
                 }
-                if (GUI.Button(new Rect((Screen.width * 0.50f), (Screen.height * 0.4f), (Screen.width * 0.25f), (Screen.height * 0.1f)), portraits[1]))
+                if (GUI.Button(new Rect((Screen.width * 0.50f), (Screen.height * 0.4f), (Screen.width * 0.25f), (Screen.height * 0.1f)), switchPortraits[1]))
                 {
                     CheckSwitch(1);
                 }
-                if (GUI.Button(new Rect((Screen.width * 0.50f), (Screen.height * 0.5f), (Screen.width * 0.25f), (Screen.height * 0.1f)), portraits[2]))
+                if (GUI.Button(new Rect((Screen.width * 0.50f), (Screen.height * 0.5f), (Screen.width * 0.25f), (Screen.height * 0.1f)), switchPortraits[2]))
                 {
                     CheckSwitch(2);
                 }
-                if (GUI.Button(new Rect((Screen.width * 0.25f), (Screen.height * 0.3f), (Screen.width * 0.25f), (Screen.height * 0.1f)), portraits[3]))
+                if (GUI.Button(new Rect((Screen.width * 0.25f), (Screen.height * 0.3f), (Screen.width * 0.25f), (Screen.height * 0.1f)), switchPortraits[3]))
                 {
                     CheckSwitch(3);
                 }
-                if (GUI.Button(new Rect((Screen.width * 0.25f), (Screen.height * 0.4f), (Screen.width * 0.25f), (Screen.height * 0.1f)), portraits[4]))
+                if (GUI.Button(new Rect((Screen.width * 0.25f), (Screen.height * 0.4f), (Screen.width * 0.25f), (Screen.height * 0.1f)), switchPortraits[4]))
                 {
                     CheckSwitch(4);
                 }
-                if (GUI.Button(new Rect((Screen.width * 0.25f), (Screen.height * 0.5f), (Screen.width * 0.25f), (Screen.height * 0.1f)), portraits[5]))
+                if (GUI.Button(new Rect((Screen.width * 0.25f), (Screen.height * 0.5f), (Screen.width * 0.25f), (Screen.height * 0.1f)), switchPortraits[5]))
                 {
                     CheckSwitch(5);
                 }
@@ -137,10 +142,10 @@ public class BattleManager : MonoBehaviour
                 {
                     phase = 0;
                     //Resets portrait positions if switch is cancelled 
-                    portraits.Clear();
+                    switchPortraits.Clear();
                     for (int i = 0; i < fieldPlayers.Count; i++)
                     {
-                        portraits.Add(fieldPlayers[i].gameObject.GetComponent<PlayerCharacter>().battlePic);
+                        switchPortraits.Add(fieldPlayers[i].gameObject.GetComponent<PlayerCharacter>().battlePic);
                     }
                 }
             }
@@ -194,7 +199,7 @@ public class BattleManager : MonoBehaviour
             fieldPlayers.Add(temp);
             BaseEntity location = fieldPlayers[i].GetComponent<BaseEntity>();
             fieldPlayers[i].transform.position = new Vector3(playerSpawns[location.battlePosition].transform.position.x, playerSpawns[location.battlePosition].transform.position.y, playerSpawns[location.battlePosition].transform.position.z);
-            portraits.Add(temp.GetComponent<BaseEntity>().battlePic);
+            switchPortraits.Add(temp.GetComponent<BaseEntity>().battlePic);
         }
         SortPlayers();
 
@@ -211,12 +216,12 @@ public class BattleManager : MonoBehaviour
         GameObject switchTemp2 = switchPlayers[s2];
         switchPlayers.RemoveAt(s2);
         switchPlayers.Insert(s2, switchTemp1);
-        portraits.RemoveAt(s2);
-        portraits.Insert(s2, switchTemp1.GetComponent<BaseEntity>().battlePic);
+        switchPortraits.RemoveAt(s2);
+        switchPortraits.Insert(s2, switchTemp1.GetComponent<BaseEntity>().battlePic);
         switchPlayers.RemoveAt(s1);
         switchPlayers.Insert(s1, switchTemp2);
-        portraits.RemoveAt(s1);
-        portraits.Insert(s1, switchTemp2.GetComponent<BaseEntity>().battlePic);
+        switchPortraits.RemoveAt(s1);
+        switchPortraits.Insert(s1, switchTemp2.GetComponent<BaseEntity>().battlePic);
     }
 
     /// <summary>
@@ -251,8 +256,8 @@ public class BattleManager : MonoBehaviour
             GameObject player = tempList[i];
             fieldPlayers.RemoveAt(pos);
             fieldPlayers.Insert(pos, player);
-            portraits.RemoveAt(pos);
-            portraits.Insert(pos, player.GetComponent<BaseEntity>().battlePic);
+            switchPortraits.RemoveAt(pos);
+            switchPortraits.Insert(pos, player.GetComponent<BaseEntity>().battlePic);
         }
 
     }
@@ -314,9 +319,9 @@ public class BattleManager : MonoBehaviour
                 {
                     break;
                 }
-            }
-        }
-    }
+			}
+		}
+	}
 
     void EndTurn()
     {
@@ -339,6 +344,16 @@ public class BattleManager : MonoBehaviour
             turn = 2;
         }
     }
+
+	void DrawTurnOrder()
+	{
+		for (int i = 0; i < turnOrder.Count; i++)
+		{
+			turnPortraits.Add(turnOrder[i].GetComponent<BaseEntity>().battlePic);
+
+			GUI.DrawTexture(new Rect(0, turnPortraits[i].height * i / 4, turnPortraits[i].width / 4, turnPortraits[i].height / 4), turnPortraits[i]);
+		}
+	}
 
     IEnumerator Pause(int timeInSeconds)
     {
