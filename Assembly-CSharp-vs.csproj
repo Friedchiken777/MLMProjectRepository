@@ -63,6 +63,16 @@
      <Compile Include="Assets\Scripts\CharacterClasses\Skill.cs" />
      <Compile Include="Assets\Scripts\CharacterClasses\Vital.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
+     <Compile Include="Assets\Scripts\DungeonAbilities\AJBuck.cs" />
+     <Compile Include="Assets\Scripts\DungeonAbilities\BreakableObject.cs" />
+     <Compile Include="Assets\Scripts\DungeonAbilities\DashArchery.cs" />
+     <Compile Include="Assets\Scripts\DungeonAbilities\DashArrows.cs" />
+     <Compile Include="Assets\Scripts\DungeonAbilities\DirectionalTargeting.cs" />
+     <Compile Include="Assets\Scripts\DungeonAbilities\HiddenGems.cs" />
+     <Compile Include="Assets\Scripts\DungeonAbilities\PinkieCannonShot.cs" />
+     <Compile Include="Assets\Scripts\DungeonAbilities\PuzzleBlock.cs" />
+     <Compile Include="Assets\Scripts\DungeonAbilities\RarityReveal.cs" />
+     <Compile Include="Assets\Scripts\DungeonAbilities\TwilightTargeting.cs" />
      <Compile Include="Assets\Scripts\EnemyInteract.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GameSettings.cs" />
@@ -71,8 +81,6 @@
      <Compile Include="Assets\Scripts\Movement\ControllerV3.cs" />
      <Compile Include="Assets\Scripts\Movement\PlayerShadow.cs" />
      <Compile Include="Assets\Scripts\NPC.cs" />
-     <Compile Include="Assets\Scripts\PuzzleBlock.cs" />
-     <Compile Include="Assets\Scripts\TwilightTargeting.cs" />
      <Compile Include="Assets\ZStandard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\ZStandard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
      <None Include="Assets\ZStandard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />

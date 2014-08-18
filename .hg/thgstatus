@@ -5,6 +5,7 @@ m##TestBuilds##/TestBuild1.1_Data/DialogueText
 m##TestBuilds##/TestBuild1.1_Data/Mono/etc/mono/2.0/Browsers
 mAssets/Animations
 mAssets/DialogueText
+mAssets/Materials
 rAssets/Prefabs
 mAssets/Scenes
 rAssets/Scripts
@@ -18,7 +19,6 @@ mAssets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter
 mAssets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm
 mLibrary
 mLibrary/ScriptAssemblies
-mLibrary/metadata/00
 mLibrary/metadata/01
 mLibrary/metadata/02
 mLibrary/metadata/07
@@ -51,12 +51,9 @@ mLibrary/metadata/30
 mLibrary/metadata/31
 mLibrary/metadata/32
 mLibrary/metadata/34
-mLibrary/metadata/35
 mLibrary/metadata/36
-mLibrary/metadata/39
 mLibrary/metadata/3c
 mLibrary/metadata/3d
-mLibrary/metadata/3e
 mLibrary/metadata/3f
 mLibrary/metadata/41
 mLibrary/metadata/42
@@ -72,7 +69,6 @@ mLibrary/metadata/53
 mLibrary/metadata/54
 mLibrary/metadata/56
 mLibrary/metadata/57
-mLibrary/metadata/5b
 mLibrary/metadata/5c
 mLibrary/metadata/60
 mLibrary/metadata/61
@@ -84,10 +80,8 @@ mLibrary/metadata/66
 mLibrary/metadata/67
 mLibrary/metadata/68
 mLibrary/metadata/69
-mLibrary/metadata/6c
 mLibrary/metadata/6d
 mLibrary/metadata/6e
-mLibrary/metadata/6f
 mLibrary/metadata/71
 mLibrary/metadata/74
 mLibrary/metadata/79
@@ -116,7 +110,6 @@ mLibrary/metadata/9c
 mLibrary/metadata/9d
 mLibrary/metadata/9e
 mLibrary/metadata/a2
-mLibrary/metadata/a4
 mLibrary/metadata/a6
 mLibrary/metadata/a7
 mLibrary/metadata/a8
@@ -125,7 +118,6 @@ mLibrary/metadata/ac
 mLibrary/metadata/ad
 mLibrary/metadata/ae
 mLibrary/metadata/af
-mLibrary/metadata/b2
 mLibrary/metadata/b3
 mLibrary/metadata/b4
 mLibrary/metadata/b5
@@ -157,13 +149,12 @@ mLibrary/metadata/d8
 mLibrary/metadata/da
 mLibrary/metadata/df
 mLibrary/metadata/e0
-mLibrary/metadata/e2
 mLibrary/metadata/e3
 mLibrary/metadata/e4
 mLibrary/metadata/e5
 mLibrary/metadata/e6
 mLibrary/metadata/e7
-mLibrary/metadata/e8
+rLibrary/metadata/e8
 mLibrary/metadata/e9
 mLibrary/metadata/ea
 mLibrary/metadata/eb
