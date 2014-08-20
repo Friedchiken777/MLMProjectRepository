@@ -1,8 +1,6 @@
 fileFormatVersion: 2
 guid: b01e0762e10e1db4c801b7dc6ddb9671
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: pp_stance_spr_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -37,7 +35,6 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 65
   alphaIsTransparency: 1
   textureType: 8
