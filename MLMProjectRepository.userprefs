@@ -1,4 +1,5 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DungeonAbilities\DirectionalTargeting.cs">
     <Files>
@@ -13,6 +14,23 @@
       <File FileName="Assets\Scripts\DungeonAbilities\AJBuck.cs" Line="11" Column="27" />
       <File FileName="Assets\Scripts\DungeonAbilities\DashArrows.cs" Line="19" Column="40" />
       <File FileName="Assets\Scripts\DungeonAbilities\DashArchery.cs" Line="45" Column="78" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BattleManager.cs">
+    <Files>
+      <File FileName="Assets\Scripts\BattleManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DungeonAbilities\PinkieCannonShot.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DungeonAbilities\DirectionalTargeting.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DungeonAbilities\HiddenGems.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DungeonAbilities\RarityReveal.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DungeonAbilities\TwilightTargeting.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Movement\ControllerV3.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Movement\Cam2D.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DungeonAbilities\BreakableObject.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DungeonAbilities\AJBuck.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DungeonAbilities\DashArrows.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DungeonAbilities\DashArchery.cs" Line="1" Column="1" />
+>>>>>>> 62899349850950a072de18daa65cee4b207c7ac7
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

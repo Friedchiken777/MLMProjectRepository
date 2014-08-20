@@ -1,6 +1,8 @@
 fileFormatVersion: 2
 guid: 6132996bdef50554a964121c96d31250
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: dun_brick2_spr_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +37,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 32
   alphaIsTransparency: 1
   textureType: 8
