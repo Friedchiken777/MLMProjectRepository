@@ -1,4 +1,4 @@
-m
+r
 m##TestBuilds##/FirstTestBuild_Data/Mono/etc/mono/2.0/Browsers
 m##TestBuilds##/TestBuild1.1_Data
 m##TestBuilds##/TestBuild1.1_Data/DialogueText
@@ -18,6 +18,7 @@ mAssets/Textures
 mAssets/ZStandard Assets/Character Controllers
 mAssets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter
 mAssets/ZStandard Assets/Character Controllers/Sources/PrototypeCharacter/Materials
+mAssets/ZStandard Assets/Character Controllers/Sources/Scripts
 mAssets/ZStandard Assets/Particles/Dust
 mAssets/ZStandard Assets/Particles/Fire
 mAssets/ZStandard Assets/Particles/Legacy Particles
@@ -25,9 +26,12 @@ mAssets/ZStandard Assets/Particles/Misc
 mAssets/ZStandard Assets/Particles/Smoke
 mAssets/ZStandard Assets/Particles/Sources/Animations
 mAssets/ZStandard Assets/Particles/Sources/Materials
+mAssets/ZStandard Assets/Particles/Sources/Shaders
 mAssets/ZStandard Assets/Particles/Sparkles
 mAssets/ZStandard Assets/Particles/Water
 mAssets/ZStandard Assets/Physic Materials
+mAssets/ZStandard Assets/Scripts/Camera Scripts
+mAssets/ZStandard Assets/Scripts/General Scripts
 mAssets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm
 mAssets/ZStandard Assets/Terrain Assets/Trees Ambient-Occlusion/Palm/Materials
 mLibrary
