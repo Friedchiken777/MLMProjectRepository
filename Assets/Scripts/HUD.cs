@@ -130,52 +130,40 @@ public class HUD : MonoBehaviour
 	{
 		for (int i = 0; i < maxCharacters / 2; i++)
 		{
-			GUI.DrawTexture(new Rect(0, characterGradientTop[i].height * i, characterGradientTop[i].width, characterGradientTop[i].height), characterGradientTop[i]);
+			GUI.DrawTexture(new Rect(0,
+			                         characterGradientTop[i].height * i,
+			                         characterGradientTop[i].width,
+			                         characterGradientTop[i].height),
+			                characterGradientTop[i]);
+			/*GUI.DrawTexture(new Rect(0,
+			                         characterGradientTop[i].height + ((characterGradientTop[i].height - characterHPFillTop[i].height) / 2) * i,
+			                         characterHPFillTop[i].width,
+			                         characterHPFillTop[i].height),
+			                characterHPFillTop[i]);
+			GUI.DrawTexture(new Rect(0,
+			                         characterGradientTop[i].height + ((characterGradientTop[i].height - characterMPFillTop[i].height) / 2) * i,
+			                         characterMPFillTop[i].width,
+			                         characterMPFillTop[i].height),
+			                characterMPFillTop[i]);*/
+			GUI.DrawTexture(new Rect(0,
+			                         (characterGradientTop[i].height + ((characterGradientTop[i].height - characterHPOutlineTop[i].height) / 2)) * i,
+			                         characterHPOutlineTop[i].width,
+			                         characterHPOutlineTop[i].height),
+			                characterHPOutlineTop[i]);
+			GUI.DrawTexture(new Rect(225,
+			                         (characterGradientTop[i].height + ((characterGradientTop[i].height - characterMPOutlineTop[i].height) / 2)) * i,
+			                         characterMPOutlineTop[i].width,
+			                         characterMPOutlineTop[i].height),
+			                characterMPOutlineTop[i]);
 		}
 
 		for (int i = 0; i < maxCharacters / 2; i++)
 		{
 			GUI.DrawTexture(new Rect(0, Screen.height - characterGradientBottom[i].height + (characterGradientBottom[i].height * -i), characterGradientBottom[i].width, characterGradientBottom[i].height), characterGradientBottom[i]);
-		}
-
-		for (int i = 0; i < maxCharacters / 2; i++)
-		{
-			GUI.DrawTexture(new Rect(), characterHPOutlineTop[i]);
-		}
-		
-		for (int i = 0; i < maxCharacters / 2; i++)
-		{
-			GUI.DrawTexture(new Rect(), characterHPOutlineBottom[i]);
-		}
-
-		for (int i = 0; i < maxCharacters / 2; i++)
-		{
-			GUI.DrawTexture(new Rect(), characterMPOutlineTop[i]);
-		}
-		
-		for (int i = 0; i < maxCharacters / 2; i++)
-		{
-			GUI.DrawTexture(new Rect(), characterMPOutlineBottom[i]);
-		}
-
-		for (int i = 0; i < maxCharacters / 2; i++)
-		{
-			GUI.DrawTexture(new Rect(), characterHPFillTop[i]);
-		}
-		
-		for (int i = 0; i < maxCharacters / 2; i++)
-		{
-			GUI.DrawTexture(new Rect(), characterHPFillBottom[i]);
-		}
-		
-		for (int i = 0; i < maxCharacters / 2; i++)
-		{
-			GUI.DrawTexture(new Rect(), characterMPFillTop[i]);
-		}
-		
-		for (int i = 0; i < maxCharacters / 2; i++)
-		{
-			GUI.DrawTexture(new Rect(), characterMPFillBottom[i]);
+			GUI.DrawTexture(new Rect(0, Screen.height - characterHPFillBottom[i].height + (characterHPFillBottom[i].height * -i), characterHPFillBottom[i].width, characterHPFillBottom[i].height), characterHPFillBottom[i]);
+			GUI.DrawTexture(new Rect(0, Screen.height - characterMPFillBottom[i].height + (characterMPFillBottom[i].height * -i), characterMPFillBottom[i].width, characterMPFillBottom[i].height), characterMPFillBottom[i]);
+			GUI.DrawTexture(new Rect(0, Screen.height - characterHPOutlineBottom[i].height + (characterHPOutlineBottom[i].height * -i), characterHPOutlineBottom[i].width, characterHPOutlineBottom[i].height), characterHPOutlineBottom[i]);
+			GUI.DrawTexture(new Rect(0, Screen.height - characterMPOutlineBottom[i].height + (characterMPOutlineBottom[i].height * -i), characterMPOutlineBottom[i].width, characterMPOutlineBottom[i].height), characterMPOutlineBottom[i]);
 		}
 	}
 }

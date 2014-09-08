@@ -63,7 +63,7 @@ public class BattleManager : MonoBehaviour
 
     void OnGUI()
 	{
-		DrawTurnOrder();
+		//DrawTurnOrder();
 
 		//Players Turn
         if (turn == 1)
