@@ -21,7 +21,7 @@ public class BattleManager : MonoBehaviour
                             switchPlayers,	//List to keep track of swiching before actually switching
                             turnOrder;		//List of turns in order with 0 being the current turn
 
-	private List<Texture> turnPortraits;		//List of player turn portraits
+	public List<Texture> turnPortraits;		//List of player turn portraits
     private List<Texture> switchPortraits;	  	//List of player switch portraits
 
     public int enemiesInBattle;				//Number of enemies participating in next battle
@@ -62,8 +62,8 @@ public class BattleManager : MonoBehaviour
     }
 
     void OnGUI()
-    {
-		DrawTurnOrder();
+	{
+		//DrawTurnOrder();
 
 		//Players Turn
         if (turn == 1)
@@ -321,36 +321,40 @@ public class BattleManager : MonoBehaviour
                 }
 			}
 		}
+
+		for (int i = 1; i < turnOrder.Count; i++)
+		{
+			turnPortraits.Add(turnOrder[i].GetComponent<BaseEntity>().battlePic);
+		}
 	}
 
     void EndTurn()
     {
         GameObject elementToRemove;
+		Texture elementToRemoveTexture;
+
+		elementToRemove = turnOrder[0];
+		elementToRemoveTexture = turnOrder[0].GetComponent<BaseEntity>().battlePic;
+		turnOrder.RemoveAt(0);
+		turnPortraits.RemoveAt(0);
+		turnOrder.Insert(turnOrder.Count - 1, elementToRemove);
+		turnPortraits.Insert(turnPortraits.Count - 1, elementToRemoveTexture);
 
         if (turnOrder[0].CompareTag("Player"))
         {
-            elementToRemove = turnOrder[0];
-			turnOrder.RemoveAt(0);
-            turnOrder.Insert(turnOrder.Count - 1, elementToRemove);
             
             turn = 1;
         }
         else
         {
-            elementToRemove = turnOrder[0];
-			turnOrder.RemoveAt(0);
-			turnOrder.Insert(turnOrder.Count - 1, elementToRemove);
-
             turn = 2;
         }
     }
 
 	void DrawTurnOrder()
 	{
-		for (int i = 0; i < turnOrder.Count; i++)
+		for (int i = 0; i < turnOrder.Count - 1; i++)
 		{
-			turnPortraits.Add(turnOrder[i].GetComponent<BaseEntity>().battlePic);
-
 			GUI.DrawTexture(new Rect(0, turnPortraits[i].height * i / 4, turnPortraits[i].width / 4, turnPortraits[i].height / 4), turnPortraits[i]);
 		}
 	}

@@ -1,0 +1,472 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Mages
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 347be0f76a519d344a89ce1dc0d73be4, type: 2}
+  sprites:
+  - name: life_MP_bar
+    outer:
+      serializedVersion: 2
+      x: 506
+      y: 714
+      width: 157
+      height: 21
+    inner:
+      serializedVersion: 2
+      x: 506
+      y: 714
+      width: 157
+      height: 21
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: window
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 836
+      width: 938
+      height: 188
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 836
+      width: 938
+      height: 188
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: queue_flutters
+    outer:
+      serializedVersion: 2
+      x: 258
+      y: 373
+      width: 88
+      height: 120
+    inner:
+      serializedVersion: 2
+      x: 258
+      y: 373
+      width: 88
+      height: 120
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: portrait_small_AJ
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 436
+      width: 257
+      height: 59
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 436
+      width: 257
+      height: 59
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: queue_rarity
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 134
+      width: 89
+      height: 120
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 134
+      width: 89
+      height: 120
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: portrait_small_dash
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 556
+      width: 257
+      height: 59
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 556
+      width: 257
+      height: 59
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: white_gradient
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 777
+      width: 1003
+      height: 58
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 777
+      width: 1003
+      height: 58
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: queue_mon3
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 255
+      width: 89
+      height: 120
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 255
+      width: 89
+      height: 120
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: queue_mon2
+    outer:
+      serializedVersion: 2
+      x: 258
+      y: 615
+      width: 89
+      height: 120
+    inner:
+      serializedVersion: 2
+      x: 258
+      y: 615
+      width: 89
+      height: 120
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: portrait_small_rarity
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 616
+      width: 257
+      height: 59
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 616
+      width: 257
+      height: 59
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: queue_twilight
+    outer:
+      serializedVersion: 2
+      x: 90
+      y: 255
+      width: 89
+      height: 120
+    inner:
+      serializedVersion: 2
+      x: 90
+      y: 255
+      width: 89
+      height: 120
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: life_frame
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 736
+      width: 411
+      height: 40
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 736
+      width: 411
+      height: 40
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: portrait_small_flutters
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 676
+      width: 257
+      height: 59
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 676
+      width: 257
+      height: 59
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: queue_dash
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 13
+      width: 89
+      height: 120
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 13
+      width: 89
+      height: 120
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: life_HP_bar
+    outer:
+      serializedVersion: 2
+      x: 348
+      y: 714
+      width: 157
+      height: 21
+    inner:
+      serializedVersion: 2
+      x: 348
+      y: 714
+      width: 157
+      height: 21
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: queue_pinkie
+    outer:
+      serializedVersion: 2
+      x: 258
+      y: 494
+      width: 89
+      height: 120
+    inner:
+      serializedVersion: 2
+      x: 258
+      y: 494
+      width: 89
+      height: 120
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: portrait_small_twilight
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 496
+      width: 257
+      height: 59
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 496
+      width: 257
+      height: 59
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: queue_AJ
+    outer:
+      serializedVersion: 2
+      x: 90
+      y: 134
+      width: 89
+      height: 120
+    inner:
+      serializedVersion: 2
+      x: 90
+      y: 134
+      width: 89
+      height: 120
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: portrait_small_pinkie
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 376
+      width: 257
+      height: 59
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 376
+      width: 257
+      height: 59
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: mana_bar
+    outer:
+      serializedVersion: 2
+      x: 412
+      y: 736
+      width: 206
+      height: 40
+    inner:
+      serializedVersion: 2
+      x: 412
+      y: 736
+      width: 206
+      height: 40
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: queue_mon1
+    outer:
+      serializedVersion: 2
+      x: 90
+      y: 13
+      width: 89
+      height: 120
+    inner:
+      serializedVersion: 2
+      x: 90
+      y: 13
+      width: 89
+      height: 120
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: life_backing
+    outer:
+      serializedVersion: 2
+      x: 824
+      y: 753
+      width: 160
+      height: 23
+    inner:
+      serializedVersion: 2
+      x: 824
+      y: 753
+      width: 160
+      height: 23
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: health_bar
+    outer:
+      serializedVersion: 2
+      x: 619
+      y: 736
+      width: 204
+      height: 40
+    inner:
+      serializedVersion: 2
+      x: 619
+      y: 736
+      width: 204
+      height: 40
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
