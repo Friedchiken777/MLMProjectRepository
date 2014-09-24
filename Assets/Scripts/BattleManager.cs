@@ -18,7 +18,7 @@ public class BattleManager : MonoBehaviour
 
     public List<GameObject> fieldEnemies, 	//List of enemies currently on battlefield
                             fieldPlayers,	//List of players currently on battlefield
-                            switchPlayers,	//List to keep track of swiching before actually switching
+                            switchPlayers,	//List to keep track of switching before actually switching
                             turnOrder;		//List of turns in order with 0 being the current turn
 
 	public List<Texture> turnPortraits;		//List of player turn portraits
